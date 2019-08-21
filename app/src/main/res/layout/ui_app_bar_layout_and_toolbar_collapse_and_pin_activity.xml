@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/md_blue_500"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/coverPhotoImageView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/baseline_image_black_24" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarbacklongarrow"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:textAlignment="viewStart"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="457dp"
+        android:layout_marginTop="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/textView244"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="city, spain, travel, social, "
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_400"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView245"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="20.2k"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView244" />
+
+            <ImageView
+                android:id="@+id/likeImageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:tint="@color/md_grey_600"
+                app:layout_constraintBottom_toBottomOf="@+id/textView245"
+                app:layout_constraintStart_toEndOf="@+id/textView245"
+                app:layout_constraintTop_toTopOf="@+id/textView245"
+                app:srcCompat="@drawable/baseline_heart_24" />
+
+            <TextView
+                android:id="@+id/textView246"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="22.2k"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintBottom_toBottomOf="@+id/likeImageView"
+                app:layout_constraintStart_toEndOf="@+id/likeImageView"
+                app:layout_constraintTop_toTopOf="@+id/likeImageView" />
+
+            <ImageView
+                android:id="@+id/shareImageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:tint="@color/md_grey_600"
+                app:layout_constraintBottom_toBottomOf="@+id/textView246"
+                app:layout_constraintStart_toEndOf="@+id/textView246"
+                app:layout_constraintTop_toTopOf="@+id/textView246"
+                app:srcCompat="@drawable/baseline_share_alt_box_black_24" />
+
+            <TextView
+                android:id="@+id/textView247"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="13.3k"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintBottom_toBottomOf="@+id/shareImageView"
+                app:layout_constraintStart_toEndOf="@+id/shareImageView"
+                app:layout_constraintTop_toTopOf="@+id/shareImageView" />
+
+            <ImageView
+                android:id="@+id/commentImageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:tint="@color/md_grey_600"
+                app:layout_constraintBottom_toBottomOf="@+id/textView247"
+                app:layout_constraintStart_toEndOf="@+id/textView247"
+                app:layout_constraintTop_toTopOf="@+id/textView247"
+                app:srcCompat="@drawable/baseline_comment_line_24" />
+
+            <TextView
+                android:id="@+id/textView248"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="55.3k"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintBottom_toBottomOf="@+id/commentImageView"
+                app:layout_constraintStart_toEndOf="@+id/commentImageView"
+                app:layout_constraintTop_toTopOf="@+id/commentImageView" />
+
+            <ImageView
+                android:id="@+id/faceImageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:tint="@color/md_grey_600"
+                app:layout_constraintBottom_toBottomOf="@+id/textView248"
+                app:layout_constraintStart_toEndOf="@+id/textView248"
+                app:layout_constraintTop_toTopOf="@+id/textView248"
+                app:srcCompat="@drawable/baseline_satisfied_face_24" />
+
+            <View
+                android:id="@+id/view85"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/md_grey_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/likeImageView" />
+
+            <TextView
+                android:id="@+id/textView249"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/roboto"
+                android:lineSpacingExtra="2dp"
+                android:paddingBottom="@dimen/space_16"
+                android:text="@string/dummy_text1"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view85" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_16"
+        app:backgroundTint="@color/colorPrimary"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/favorite"
+        android:visibility="gone"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_behavior="com.panaceasoft.pskotlinmaterial.utils.ScrollingFABBehavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

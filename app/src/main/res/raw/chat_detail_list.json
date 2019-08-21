@@ -1,0 +1,56 @@
+[
+  {
+    "id": "message1",
+    "by_user": "user1",
+    "profile_image": "woman_profile",
+    "msg": "Hello, thank you for calling Provide Support. How may I help you?",
+    "timestamp": "9:56 AM",
+    "state": "read",
+    "type": "other"
+  },
+  {
+    "id": "message2",
+    "by_user": "user2",
+    "profile_image": "user_profile_man",
+    "msg": "Okay, No problem",
+    "timestamp": "9:56 AM",
+    "state": "read",
+    "type": "owner"
+  },
+  {
+    "id": "time1",
+    "by_user": "none",
+    "profile_image": "user_profile_man",
+    "msg": "September 9",
+    "timestamp": "none",
+    "state": "none",
+    "type": "time"
+  },
+  {
+    "id": "message3",
+    "by_user": "user1",
+    "profile_image": "woman_profile",
+    "msg": "Hello! How was the party?",
+    "timestamp": "9:56 AM",
+    "state": "read",
+    "type": "other"
+  },
+  {
+    "id": "message4",
+    "by_user": "user2",
+    "profile_image": "user_profile_man",
+    "msg": "It's really good, thanks.",
+    "timestamp": "9:56 AM",
+    "state": "read",
+    "type": "owner"
+  },
+  {
+    "id": "message5",
+    "by_user": "user2",
+    "profile_image": "user_profile_man",
+    "msg": "Jedd was there",
+    "timestamp": "9:56 AM",
+    "state": "sent",
+    "type": "owner"
+  }
+]

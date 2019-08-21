@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/space_20"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/md_white_1000"
+            android:scrollbars="none"
+            android:scrollingCache="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_16"
+                android:layout_marginStart="@dimen/space_16"
+                android:layout_marginTop="@dimen/space_16"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!--Start Left Icon Buttons -->
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Left Icon Buttons"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/colorLine" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/baseline_send"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="SEND"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="@dimen/font_body_size" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/baseline_send_white_24"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="SEND"
+                        android:textSize="@dimen/font_body_size"
+                        android:theme="@style/PSButton.Primary" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/baseline_send_white_24"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="SEND"
+                        android:textSize="@dimen/font_body_size"
+                        android:theme="@style/PSButton.Accent" />
+
+                </LinearLayout>
+
+
+                <!--End Left Icon Buttons-->
+
+
+                <!--Start Left Icon No Border Buttons -->
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_32"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Left Icon And No Border Buttons"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/colorLine" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/PSButton.Primary.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/baseline_send_black_24"
+                        android:gravity="center"
+                        android:text="SEND"
+                        android:textSize="@dimen/font_body_size"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorTextLight"
+                        />
+
+                    <Button
+                        style="@style/PSButton.Primary.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/baseline_send_black_24"
+                        android:gravity="center"
+                        android:text="SEND"
+                        android:theme="@style/PSButton.Primary"
+                        android:textSize="@dimen/font_body_size"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorPrimaryButton"/>
+
+                    <Button
+                        style="@style/PSButton.Primary.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/baseline_send_black_24"
+                        android:gravity="center"
+                        android:text="SEND"
+                        android:theme="@style/PSButton.Accent"
+                        android:textSize="@dimen/font_body_size"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorAccentButton"/>
+
+                </LinearLayout>
+
+
+                <!--End Left Icon No Border Buttons-->
+
+                <!--Start Left Icon No Background Buttons -->
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_32"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Left Icon And No Background Buttons"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/colorLine" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:orientation="horizontal">
+
+                    <Button
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/baseline_send_black_24"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="SEND"
+                        android:textColor="@color/colorTextLight"
+                        android:textSize="@dimen/font_body_size" />
+
+                    <Button
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/baseline_send_black_24"
+                        android:gravity="center"
+                        android:text="SEND"
+                        android:theme="@style/PSButton.White.Primary"
+                        android:textSize="@dimen/font_body_size"
+                        android:fontFamily="@font/roboto_medium" />
+
+                    <Button
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/baseline_send_black_24"
+                        android:gravity="center"
+                        android:text="SEND"
+                        android:theme="@style/PSButton.White.Accent"
+                        android:textSize="@dimen/font_body_size"
+                        android:fontFamily="@font/roboto_medium" />
+
+                </LinearLayout>
+                <!--End Left Icon No Background Buttons -->
+
+
+                <!--Start Right Icon Buttons -->
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_32"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Right Icon Buttons"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/colorLine" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/baseline_news_white_24"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="NEWS"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="@dimen/font_body_size" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/baseline_news_white_24"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="NEWS"
+                        android:textSize="@dimen/font_body_size"
+                        android:theme="@style/PSButton.Primary" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/baseline_news_white_24"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="NEWS"
+                        android:textSize="@dimen/font_body_size"
+                        android:theme="@style/PSButton.Accent" />
+
+                </LinearLayout>
+
+
+                <!--End Right Icon Buttons-->
+
+
+                <!--Start Right Icon No Border Buttons -->
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_32"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Right Icon And No Border Buttons"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/colorLine" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/PSButton.Primary.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/baseline_news_black_24"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="NEWS"
+                        android:textColor="@color/colorTextLight"
+                        android:textSize="@dimen/font_body_size" />
+
+                    <Button
+                        style="@style/PSButton.Primary.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/baseline_news_black_24"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="NEWS"
+                        android:textColor="@color/colorPrimaryButton"
+                        android:textSize="@dimen/font_body_size"
+                        android:theme="@style/PSButton.Primary" />
+
+                    <Button
+                        style="@style/PSButton.Primary.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/baseline_news_black_24"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="NEWS"
+                        android:textColor="@color/colorAccentButton"
+                        android:textSize="@dimen/font_body_size"
+                        android:theme="@style/PSButton.Accent" />
+
+                </LinearLayout>
+
+
+                <!--End Right Icon No Border Buttons-->
+
+                <!--Start Left Icon No Background Buttons -->
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_32"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Right Button And No Background Buttons"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/font_title_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_1"
+                    android:background="@color/colorLine" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_20"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:orientation="horizontal">
+
+                    <Button
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/baseline_news_black_24"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="NEWS"
+                        android:textColor="@color/colorTextLight"
+                        android:textSize="@dimen/font_body_size" />
+
+                    <Button
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/baseline_news_black_24"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="NEWS"
+                        android:textSize="@dimen/font_body_size"
+                        android:theme="@style/PSButton.White.Primary" />
+
+                    <Button
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/baseline_news_black_24"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="NEWS"
+                        android:textSize="@dimen/font_body_size"
+                        android:theme="@style/PSButton.White.Accent" />
+
+                </LinearLayout>
+                <!--End Left Icon No Background Buttons -->
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

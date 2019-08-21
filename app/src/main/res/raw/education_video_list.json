@@ -1,0 +1,82 @@
+[
+  {
+    "title":"Getting started as an entrepreneur",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "length":"1m 24s",
+    "image":"education_img_13",
+    "category":"entrepreneur",
+    "size":"20MB"
+  },
+  {
+    "title":"Finding focus",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "length":"1m 5s",
+    "image":"education_img_13",
+    "category":"entrepreneur",
+    "size":"21MB"
+  },
+  {
+    "title":"Increasing product awareness",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "length":"1m 33s",
+    "image":"education_img_13",
+    "category":"entrepreneur",
+    "size":"19MB"
+  },
+  {
+    "title":"Bringing in investors",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "length":"1m 42s",
+    "image":"education_img_13",
+    "category":"entrepreneur",
+    "size":"18MB"
+  },
+  {
+    "title":"Pitching to investors",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "length":"2m 10s",
+    "image":"education_img_13",
+    "category":"entrepreneur",
+    "size":"30MB"
+  },
+  {
+    "title":"Planning ahead",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "length":"1m 24s",
+    "image":"education_img_13",
+    "category":"entrepreneur",
+    "size":"20MB"
+  },
+  {
+    "title":"The biggest mistake entrepreneurs make",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "length":"1m 27s",
+    "image":"education_img_13",
+    "category":"entrepreneur",
+    "size":"22MB"
+  },
+  {
+    "title":"Understanding the importance of company culture",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "length":"1m 18s",
+    "image":"education_img_13",
+    "category":"entrepreneur",
+    "size":"19MB"
+  },
+  {
+    "title":"Thinking about competition",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "length":"1m 8s",
+    "image":"education_img_13",
+    "category":"entrepreneur",
+    "size":"18MB"
+  },
+  {
+    "title":"Exploring entrepreneurship fundamentals",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "length":"2m 40s",
+    "image":"education_img_13",
+    "category":"entrepreneur",
+    "size":"33MB"
+  }
+]

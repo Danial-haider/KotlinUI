@@ -1,0 +1,32 @@
+[
+  {
+    "id": "promotion1",
+    "image": "home9_promo_1",
+    "name": "Discoutn Coupon"
+  },
+  {
+    "id": "promotion2",
+    "image": "home9_promo_2",
+    "name": "Discoutn Coupon"
+  },
+  {
+    "id": "promotion3",
+    "image": "home9_promo_3",
+    "name": "Discoutn Coupon"
+  },
+  {
+    "id": "promotion4",
+    "image": "home9_promo_1",
+    "name": "Discoutn Coupon"
+  },
+  {
+    "id": "promotion5",
+    "image": "home9_promo_2",
+    "name": "Discoutn Coupon"
+  },
+  {
+    "id": "promotion6",
+    "image": "home9_promo_3",
+    "name": "Discoutn Coupon"
+  }
+]

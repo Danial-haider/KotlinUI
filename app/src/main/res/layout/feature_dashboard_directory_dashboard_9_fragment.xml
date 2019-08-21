@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/home9ProfileImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/baseline_image_black_24" />
+
+        <!--<ImageView
+            android:id="@+id/imageView143"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            tools:src="@drawable/baseline_user_24"
+            app:layout_constraintBottom_toBottomOf="@+id/home9ProfileImageView"
+            app:layout_constraintEnd_toEndOf="@+id/home9ProfileImageView"
+            app:layout_constraintStart_toStartOf="@+id/home9ProfileImageView"
+            app:layout_constraintTop_toTopOf="@+id/home9ProfileImageView" />
+-->
+        <TextView
+            android:id="@+id/loginRegisterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Log In or Register"
+            android:textAlignment="viewStart"
+            android:textColor="@color/md_grey_800"
+            android:textSize="@dimen/font_title_size"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/home9ProfileImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView318"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Enjoy your member benefits"
+            android:textAlignment="viewStart"
+            android:textColor="@color/md_grey_400"
+            android:textSize="@dimen/font_body_s_size"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/home9ProfileImageView"
+            app:layout_constraintStart_toStartOf="@+id/loginRegisterTextView"
+            app:layout_constraintTop_toBottomOf="@+id/loginRegisterTextView" />
+
+        <View
+            android:id="@+id/view114"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorLine"
+            app:layout_constraintTop_toBottomOf="@+id/textView318" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view114" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvProducts" />
+
+        <TextView
+            android:id="@+id/textView320"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="Ongoing Promos"
+            android:textAlignment="viewStart"
+            android:textColor="@color/md_grey_800"
+            android:textSize="@dimen/font_h7_size"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvCategory" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPromotions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView320" />
+
+        <TextView
+            android:id="@+id/textView321"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="Recommendation"
+            android:textAlignment="viewStart"
+            android:textColor="@color/md_grey_800"
+            android:textSize="@dimen/font_h6_size"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvPromotions" />
+
+        <TextView
+            android:id="@+id/textView322"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto"
+            android:text="Popular Destination"
+            android:textAlignment="viewStart"
+            android:textColor="@color/md_grey_800"
+            android:textSize="@dimen/font_h7_size"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView321" />
+
+        <ImageView
+            android:id="@+id/moreImageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/textView322"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textView322"
+            tools:src="@drawable/baseline_image_black_24" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPopular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView322" />
+
+        <TextView
+            android:id="@+id/textView323"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="Flight Special Deals"
+            android:textAlignment="viewStart"
+            android:textColor="@color/md_grey_800"
+            android:textSize="@dimen/font_h7_size"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvPopular" />
+
+        <TextView
+            android:id="@+id/textView324"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Save on your trip abroad"
+            android:textAlignment="viewStart"
+            android:textColor="@color/md_grey_400"
+            android:textSize="@dimen/font_body_s_size"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView323" />
+
+        <ImageView
+            android:id="@+id/moreImageView2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/textView324"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textView324"
+            tools:src="@drawable/baseline_image_black_24" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFlights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView324" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

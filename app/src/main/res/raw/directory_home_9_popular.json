@@ -1,0 +1,25 @@
+[{
+  "id": "popular1",
+  "image": "home9_city_1",
+  "name": "Jakarta",
+  "place": "Metropolis Charm"
+},
+  {
+    "id": "popular2",
+    "image": "home9_city_2",
+    "name": "Ubud",
+    "place": "Artists' Den"
+  },
+  {
+    "id": "popular3",
+    "image": "home9_city_3",
+    "name": "Penang",
+    "place": "Interesting Vibes"
+  },
+  {
+    "id": "popular4",
+    "image": "home9_city_4",
+    "name": "Malacca",
+    "place": "Museum City"
+  }
+]

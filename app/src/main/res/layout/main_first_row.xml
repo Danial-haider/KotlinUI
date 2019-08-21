@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainFirstRowLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_white_1000">
+
+    <TextView
+        android:id="@+id/categoryTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/font_title_size"
+        android:textStyle="bold"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintEnd_toStartOf="@+id/categoryIndicatorImageView"
+        app:layout_constraintStart_toEndOf="@+id/categoryImageView"
+        app:layout_constraintTop_toTopOf="@+id/categoryImageView"
+        tools:text="Category" />
+
+    <TextView
+        android:id="@+id/layoutCountTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="( 5 ) UI Layouts"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/font_body_size"
+        android:textStyle="italic"
+        app:fontFamily="@font/roboto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/categoryImageView"
+        app:layout_constraintTop_toBottomOf="@+id/categoryTextView"
+        tools:text="( 5 ) UI Layouts" />
+
+    <ImageView
+        android:id="@+id/categoryImageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="No Image"
+        android:foregroundTint="@color/md_icon_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_whatshot_black_24dp" />
+
+    <ImageView
+        android:id="@+id/newImageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:contentDescription="No Image"
+        android:foregroundTint="@color/md_white_1000"
+        android:tint="@color/md_orange_800"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutCountTextView"
+        app:layout_constraintEnd_toEndOf="@+id/categoryIndicatorImageView"
+        app:layout_constraintStart_toStartOf="@+id/categoryIndicatorImageView"
+        app:layout_constraintTop_toTopOf="@+id/layoutCountTextView"
+        app:srcCompat="@drawable/baseline_fire_white_24" />
+
+    <ImageView
+        android:id="@+id/categoryIndicatorImageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="No Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/categoryImageView"
+        app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

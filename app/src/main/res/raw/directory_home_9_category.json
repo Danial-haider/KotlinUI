@@ -1,0 +1,36 @@
+[{
+  "id": "category1",
+  "icon": "baseline_document_full_grey_24",
+  "name": "Bills & Top-up"
+},
+  {
+    "id": "category2",
+    "icon": "baseline_topup_grey_24",
+    "name": "Top-Up & Data Packages"
+  },
+  {
+    "id": "category3",
+    "icon": "baseline_movie_filter_grey_24",
+    "name": "Movies"
+  },
+  {
+    "id": "category4",
+    "icon": "baseline_pay_later_24",
+    "name": "Pay Later"
+  },
+  {
+    "id": "category5",
+    "icon": "baseline_save_card_black_24",
+    "name": "International Data Plans"
+  },
+  {
+    "id": "category6",
+    "icon": "baseline_check_in_grey_24",
+    "name": "Online Check-in"
+  },
+  {
+    "id": "category7",
+    "icon": "baseline_bell_40_grey_25",
+    "name": "Price Alerts"
+  }
+]

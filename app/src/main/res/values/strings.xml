@@ -1,0 +1,60 @@
+<resources>
+
+    <!--===============-->
+    <!-- Key to Update -->
+    <!--===============-->
+    <string name="adview_banner_home_footer">ca-app-pub-8907881762519005/3104804902</string>
+    <!--<string name="adview_banner_home_footer">ca-app-pub-0000000000000000/0000000000</string>-->
+
+    <string name="adview_interstitial_ad_key">ca-app-pub-8907881762519005/4884914148</string>
+    <!--<string name="adview_interstitial_ad_key">ca-app-pub-0000000000000000/0000000000</string>-->
+
+    <!--===================-->
+    <!-- End Key to Update -->
+    <!--===================-->
+
+
+    <string name="app_name">Kotlin Material Design</string>
+
+    <string name="tab_ui_collection">Components</string>
+    <string name="tab_features">FEATURES</string>
+    <string name="tab_application">APPS</string>
+    <string name="tab_feature_request">Feature Request</string>
+    <string name="tab_about_us">About Us</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="message__want_to_quit">Do you really want to quit?</string>
+
+    <string name="dummy_paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis, velit eget dapibus malesuada, massa eros condimentum mi, in pulvinar dui sapien at mi. Aenean porttitor vitae elit vitae sagittis. Nullam porta mauris eget libero ornare maximus. Curabitur vehicula quam vel pulvinar efficitur. Donec ultricies sapien vitae auctor congue. Suspendisse posuere malesuada augue nec sodales. Etiam ut erat massa. Integer gravida justo eu elit ornare ultrices. Curabitur augue dui, dapibus vel luctus eu, pellentesque quis erat. Suspendisse elementum justo vitae ante dapibus, et dignissim metus iaculis. Nam nec condimentum dolor, sodales scelerisque lacus. Suspendisse placerat facilisis felis id rutrum. Praesent posuere nulla id tellus tristique rutrum.\n\nDonec vitae sem malesuada, mollis velit et, faucibus erat. Suspendisse et rhoncus velit, non vestibulum erat. Maecenas a posuere diam. Curabitur cursus pharetra lacus, et euismod nisi pellentesque eu. Maecenas finibus dui scelerisque ipsum lacinia viverra. Donec eros risus, placerat id leo eget, sodales congue augue. Nullam tincidunt neque eu tellus varius facilisis. Proin sit amet mi eu sem scelerisque euismod eget sed lectus. Duis sed ante a magna tempor luctus eget in ex. Maecenas ligula arcu, tincidunt eu iaculis vitae, euismod vitae ex. Sed mollis pretium turpis, eu hendrerit eros interdum et. Pellentesque fermentum magna nec tellus ullamcorper dapibus. Fusce et vulputate tellus.\n\nDonec sem lorem, mollis tincidunt interdum non, convallis eget lacus. In imperdiet diam condimentum ex mattis efficitur. In in tellus vitae urna ultrices molestie. Fusce ac elementum ante. Sed porttitor rutrum interdum. Etiam tellus diam, hendrerit ut tellus quis, malesuada consectetur felis. Aliquam fermentum sapien ipsum, id hendrerit lorem rhoncus vitae. In hac habitasse platea dictumst.
+    </string>
+    <string name="dummy_text1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur ligula et eros pulvinar viverra. Morbi eu orci nulla. Duis porttitor mauris quis diam imperdiet, a porta diam sagittis. Suspendisse rutrum accumsan lectus et vestibulum. Donec vel est erat. Donec id sollicitudin quam, ut sollicitudin velit. Nulla at libero vitae urna fringilla porttitor sit amet vitae ligula. Duis ac mattis purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi congue, nisl eget tincidunt commodo, purus lacus dignissim massa, eu maximus ex ex sed lectus. Mauris dapibus enim ac ex tempor lobortis. Pellentesque at dolor nec dolor bibendum consectetur non ut libero.
+    </string>
+    <string name="dummy_text_title">
+        Lorem ipsum dolor sit amet.
+    </string>
+
+    <string name="dummy_medium_text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </string>
+
+    <string name="dummy_small_text">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </string>
+
+
+
+    <!-- Shrine backdrop menu labels -->
+    <string name="home5_all">ALL</string>
+    <string name="home5_brands">BRANDS</string>
+    <string name="home5_trending">TRENDING</string>
+    <string name="home5_recommended">RECOMMENDED</string>
+    <string name="home5_women">WOMEN</string>
+    <string name="home5_men">MEN</string>
+    <string name="shr_account_label">MY ACCOUNT</string>
+
+    <string name="key_binding_default_toolbar_name">Modal-Toolbar-Title</string>
+</resources>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/md_grey_900"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <ImageView
+            android:id="@+id/posterImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/baseline_image_black_24" />
+
+        <ImageView
+            android:id="@+id/imageView120"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/black_alpha_reverse_70" />
+
+        <TextView
+            android:id="@+id/textView214"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="8.0"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/font_h6_size"
+            app:layout_constraintBottom_toBottomOf="@+id/textView221"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView218" />
+
+        <TextView
+            android:id="@+id/textView216"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Adventure"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/font_body_s_size"
+            app:layout_constraintStart_toEndOf="@+id/textView221"
+            app:layout_constraintTop_toBottomOf="@+id/textView218" />
+
+        <TextView
+            android:id="@+id/textView222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Sci-Fi"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/font_body_s_size"
+            app:layout_constraintStart_toEndOf="@+id/textView216"
+            app:layout_constraintTop_toBottomOf="@+id/textView218" />
+
+        <TextView
+            android:id="@+id/textView221"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:text=" Action"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/font_body_s_size"
+            app:layout_constraintStart_toEndOf="@+id/textView214"
+            app:layout_constraintTop_toBottomOf="@+id/textView218" />
+
+        <TextView
+            android:id="@+id/textView223"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="Year 2018"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/font_body_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view71" />
+
+        <TextView
+            android:id="@+id/textView224"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="124 Minutes"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/font_body_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view71" />
+
+        <TextView
+            android:id="@+id/textView218"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto"
+            android:text="Jurassic World"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/font_h6_size"
+            app:layout_constraintStart_toEndOf="@+id/textView214"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view71"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorLine"
+            app:layout_constraintTop_toBottomOf="@+id/textView221"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView121"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/black_alpha_50" />
+
+            <View
+                android:id="@+id/view72"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/colorLine"
+                app:layout_constraintBottom_toTopOf="@+id/similarMoviesImageVIew"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView225"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="Donec at interdum tellus, eu sodales lacus. Donec porttitor vestibulum nunc, sed pulvinar est dapibus eu. In vel dolor bibendum, volutpat lectus sed, placerat turpis. Donec at interdum tellus, eu sodales lacus."
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/font_body_size"
+                app:layout_constraintBottom_toTopOf="@+id/view72"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView121" />
+
+            <TextView
+                android:id="@+id/similarMoviesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/roboto"
+                android:text="SIMILAR MOVIES"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/font_body_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/similarMoviesImageVIew"
+                app:layout_constraintStart_toEndOf="@+id/similarMoviesImageVIew"
+                app:layout_constraintTop_toTopOf="@+id/similarMoviesImageVIew" />
+
+            <ImageView
+                android:id="@+id/similarMoviesImageVIew"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/baseline_flim_grey_24" />
+
+            <ImageButton
+                android:id="@+id/similarMoviesImageButton"
+                android:layout_width="44dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="12dp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                app:layout_constraintBottom_toBottomOf="@+id/similarMoviesTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/similarMoviesTextView"
+                app:srcCompat="@drawable/baseline_arrow_right_24" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/playImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:tint="@color/md_grey_300"
+            app:layout_constraintBottom_toTopOf="@+id/watchTrailerButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/baseline_play_grey_24" />
+
+        <Button
+            android:id="@+id/watchTrailerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_line_border_and_transparent_background"
+            android:drawableLeft="@drawable/movie"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:text="Watch Trailer"
+            android:textAllCaps="false"
+            android:theme="@style/PSButton.Primary"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

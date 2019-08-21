@@ -1,0 +1,58 @@
+[
+  {
+    "id":"John",
+    "name":"John",
+    "text":"Hey I have something to talk about the things we discussed yesterday, call me when you are free",
+    "image":"profile1",
+    "count":"2",
+    "time":"9:56 am"
+  },
+  {
+    "id":"Clara",
+    "name":"Clara",
+    "text":"Let's go shopping, call me when you are ready",
+    "image":"profile2",
+    "count":"1",
+    "time":"9:56 am"
+  },
+  {
+    "id":"Clara",
+    "name":"Harry",
+    "text":"Ron told me you lost my wand, Hermonie. You have to buy a new one for me, the most expensive one",
+    "image":"profile1",
+    "count":"0",
+    "time":"9:56 am"
+  },
+  {
+    "id":"Hermonie",
+    "name":"Hermonie",
+    "text":"Don't believe everything that blonde says. He always talk about nonsense things. I already have sent your wand with my owl. It is on the way. Should be right there in any minute",
+    "image":"profile1",
+    "count":"2",
+    "time":"9:56 am"
+  },
+  {
+    "id":"Ron",
+    "name":"Ron",
+    "text":"Haha, Harry . Gotcha. Your face was so funny when I told you your wand was lost",
+    "image":"profile2",
+    "count":"0",
+    "time":"9:56 am"
+  },
+  {
+    "id":"Dumbledore",
+    "name":"Dumbledore",
+    "text":"Kids you all will be kicked out of school if you keep sneaking out when everyone is sleeping. Don't ruin peoples' peaceful dreams.",
+    "image":"profile2",
+    "count":"0",
+    "time":"9:56 am"
+  },
+  {
+    "id":"Voldemort",
+    "name":"Voldemort",
+    "text":"Kids, you all are welcomed to my property if Dumbledore kicked you out. I need more people to cheer me up before I do my nose surgery. P.S : Don't forget to bring all the gold coins you have. I need those to pay the doctor",
+    "image":"profile2",
+    "count":"1",
+    "time":"9:56 am"
+  }
+]

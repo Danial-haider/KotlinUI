@@ -1,0 +1,2044 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.panaceasoft.pskotlinmaterial">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.panaceasoft.pskotlinmaterial.AwesomeMaterials"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <service
+            android:name="com.panaceasoft.pskotlinmaterial.utils.PSFirebaseMessagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="firebase_crash_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDNVK1Q4rVL8Za6wc6pqB_eKNIJqrzuv94" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8907881762519005~8195325963" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <!--<meta-data-->
+        <!--android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+        <!--android:value="@string/adview_interstitial_ad_key"/>-->
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.MainWalkthroughtActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.MainAboutUs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.buttons.UiButtonBasicButtonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.text.UiTextTextViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.edittext.UiEditTextEditTextBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.edittext.UiEditTextEditTextDatetimeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.edittext.UiEditTextFormattedEditTextActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.font.UiFontBasicFontActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.font.UiFontCustomFontActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.toast.UiToastBasicToastActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.toast.UiToastCustomToastActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.text.UiTextTextViewAdvancedActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.dialogs.UiDialogsDialogSuccessActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.dialogs.UiDialogsDialogConfirmActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.dialogs.UiDialogsDialogAlertActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.dialogs.UiDialogsDialogInfoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.dialogs.UiDialogsDialogSingleChoiceActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.dialogs.UiDialogsDialogMultiChoiceActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.dialogs.UiDialogsDialogCustomActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.textureview.UiTextureViewTextureViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.requestfocus.UiRequestFocusBasicRequestFocusActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.fragment.UiFragmentBasicFragmentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.fragment.UiFragmentBasicFragmentFullInsideActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.include.UiIncludeBasicIncludeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.requestfocus.UiRequestFocusRequestFocusCodeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.adview.UiAdViewBannerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.adview.UiAdViewFullScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.mapviews.UiMapViewsSupportMapFragmentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.mapviews.UiMapViewsMapViewCustomPinActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.mapviews.UiMapViewsBasicMapViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.rating.UiRatingRatingBarBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.rating.UiRatingPopupRatingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.rating.UiRatingCustomRatingMultipleValueActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.searchview.UiSearchViewSearchViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.searchview.UiSearchViewToolbarSearchViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.snackbars.UiSnackBarsSnackBarBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.snackbars.UiSnackBarsSnackBarActionButtonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.snackbars.UiSnackBarsSnackBarCustomColorActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.snackbars.UiSnackBarsSnackBarAndLiftFabActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.snackbars.UiSnackBarsCustomSnackBarActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.spinner.UiSpinnerBasicSpinnerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.spinner.UiSpinnerCustomSpinnerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.viewstub.UiViewStubBasicViewStubActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.bottomsheet.UiBottomSheetFloatingBottomSheetActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.bottomsheet.UiBottomSheetBottomSheetDialogActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.bottomsheet.UiBottomSheetBasicBottomSheetActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.scrollview.UiScrollViewVerticalScrollViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.scrollview.UiScrollViewNestedScrollViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.scrollview.UiScrollViewHorizontalScrollViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.cards.UiCardsBasicCardViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.cards.UiCardsCardViewPropertiesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.cards.UiCardsCardViewOverlapActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.bottomappbar.UiBottomAppBarBasicBottomNavigationViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.bottomappbar.UiBottomAppBarBottomNavigationViewFabActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.bottomappbar.UiBottomAppBarBottomNavigationViewWithIconActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.bottomappbar.UiBottomAppBarWithFabActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.bottomappbar.UiBottomAppBarShiftingBottomNavigationViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.bottomappbar.UiBottomAppBarCustomColorBottomNavigationViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.bottomappbar.UiBottomAppBarOnScrollHideBottomNavigationViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.layout.listview.UiLayoutListViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.layout.listview.UiLayoutListViewCustomActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.list.UiListBasicListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.grid.UiGridBasicGridActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.grid.UiGridGridWithAlphaViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.grid.UiGridGridWithThreeColumnsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.grid.UiGridGridWithMultipleLineIconActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.grid.UiGridGridWithMultipleTextLinesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.grid.UiGridGridWithSingleLineIconActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.grid.UiGridGridWithSingleTextLineActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.grid.UiGridPinterestGridActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.grid.UiGridSectionedGridActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.chips.UiChipsFlexBoxDirectionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.chips.UiChipsFlexBoxAdjustmentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.chips.UiChipsBasicChips1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.layout.relativelayout.UiLayoutRelativeLayoutBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.layout.gridlayout.UiLayoutGridLayoutBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.layout.gridview.UiLayoutGridViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.tabs.UiTabsBasicTabLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.tabs.UiTabsScrollableTabLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.tabs.UiTabsStickyTabLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.tabs.UiTabsTabLayoutWithIconActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.tabs.UiTabsTabLayoutWithTextAndIconActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placelist.AppDirectoryPlaceList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placelist.AppDirectoryPlaceList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placelist.AppDirectoryPlaceList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placelist.AppDirectoryPlaceList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placelist.AppDirectoryPlaceList5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placelist.AppDirectoryPlaceList6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placelist.AppDirectoryPlaceList7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placelist.AppDirectoryPlaceList8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placelist.AppDirectoryPlaceList9Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.countrylist.AppDirectoryCountryList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.countrylist.AppDirectoryCountryList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.countrylist.AppDirectoryCountryList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.countrylist.AppDirectoryCountryList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.detail.AppDirectoryDetail1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.detail.AppDirectoryDetail2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.detail.AppDirectoryDetail3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.detail.AppDirectoryDetail4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.checkout.AppECommerceCheckout1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.layout.linear.UiLayoutLinearLayoutBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.buttons.UiButtonIconActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.buttons.UiButtonRoundedButtonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.imageview.UiImageViewImageViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.imageview.UiImageViewImageViewScaleTypeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.imageview.UiImageViewImageViewCircleShapeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.checkbox.UiCheckboxBasicCheckboxActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.checkbox.UiCheckboxRoundedCheckboxActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.webview.UiWebViewWebViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.webview.UiWebViewWebViewYouTubeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.videoview.UiVideoViewVideoViewBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.radiobutton.UiRadioButtonBasicRadioButtonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.calendar.UiCalendarBasicCalendarActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.pickers.UiPickersDatePickerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.pickers.UiPickersTimePickerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.progress.UiProgressProgressBarBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.progress.UiProgressProgressBarHorizontalActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.progress.UiProgressOnScrollProgressActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.progress.UiProgressPullRefreshProgressActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.progress.UiProgressLinearTopProgressActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.progress.UiProgressLinearCenterProgressActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.progress.UiProgressLinearBottomProgressActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.radiobutton.UiRadioButtonCustomRadioButtonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.togglebutton.UiToggleButtonBasicToggleButtonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.switchbutton.UiSwitchButtonBasicSwitchActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.fab.UiFabBasicFABActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.fab.UiFabSubMenuFabActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.fab.UiFabSubMenuWithTextFabActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.fab.UiFabHorizontalSubMenuFabActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.layout.constraint.UiLayoutConstraintLayoutBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.layout.constraint.UiLayoutConstraintLayoutAdjustViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.layout.constraint.UiLayoutConstraintLayoutChainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.surfaceview.UiSurfaceViewSurfaceViewBasicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.imagebutton.UiImageButtonBasicImageButtonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.appbarlayoutandtoolbar.UiAppBarLayoutAndToolbarBasicAppbarLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.appbarlayoutandtoolbar.UiAppBarLayoutAndToolbarCollapseAndPinActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.appbarlayoutandtoolbar.UiAppBarLayoutAndToolbarCollapsingAppbarLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.seekbar.UiSeekBarSeekBarBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.seekbar.UiSeekBarSeekBarDiscreteActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.layout.framelayout.UiLayoutFrameLayoutBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.layout.table.UiLayoutTableLayoutBasicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.navigationdrawer.UiNavigationDrawerBasicNavigationDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.steppers.UiStepperBasicSteppersTextActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.steppers.UiStepperProgressStepperActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.steppers.UiStepperDotsStepperActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.expandable.UiExpandableExpandable1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.expandable.UiExpandableExpandable2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.navigationdrawer.UiNavigationDrawerNavigationDrawer1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.navigationdrawer.UiNavigationDrawerNavigationDrawer2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.navigationdrawer.UiNavigationDrawerNavigationDrawer3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.navigationdrawer.UiNavigationDrawerNavigationDrawer4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.navigationdrawer.UiNavigationDrawerNavigationDrawer5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.navigationdrawer.UiNavigationDrawerNavigationDrawer6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.navigationdrawer.UiNavigationDrawerNavigationDrawer7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.list.UiListDragAndDropListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.list.UiListExpandableListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.list.UiListScrollToTopListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.list.UiListSectionedListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.list.UiListStickyHeaderListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.list.UiListSwipeToDismissListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.list.UiListSwipeToDismissListWithConfirmActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.uicomponent.list.UiListMultipleSelectionListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placegrid.AppDirectoryPlaceGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placegrid.AppDirectoryPlaceGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placegrid.AppDirectoryPlaceGrid3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placegrid.AppDirectoryPlaceGrid4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placegrid.AppDirectoryPlaceGrid5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placegrid.AppDirectoryPlaceGrid6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placemap.AppDirectoryPlaceMap1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placemap.AppDirectoryPlaceMap2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placemap.AppDirectoryPlaceMap3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.placemap.AppDirectoryPlaceMap4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.filter.AppDirectoryFilter1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.home.AppECommerceHome1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.home.AppECommerceHome2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.home.AppECommerceHome3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.home.AppECommerceHome4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.home.AppECommerceHome5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.filter.AppDirectoryFilter2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.filter.AppDirectoryFilter3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.filter.AppDirectoryFilter4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.gallery.AppDirectoryGallery1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.gallery.AppDirectoryGallery2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.gallery.AppDirectoryGallery3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.gallery.AppDirectoryGallery4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.home.AppDirectoryHome1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.home.AppDirectoryHome2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.home.AppDirectoryHome3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.home.AppDirectoryHome4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.home.AppDirectoryHome5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.home.AppDirectoryHome6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.home.AppDirectoryHome7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.home.AppDirectoryHome8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.home.AppDirectoryHome10Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.home.AppDirectoryHome9Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.profile.AppDirectoryProfile1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.profile.AppDirectoryProfile2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.profile.AppDirectoryProfile3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.directory.profile.AppDirectoryProfile4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.filter.AppECommerceFilter1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.filter.AppECommerceFilter2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.filter.AppECommerceFilter3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.filter.AppECommerceFilter4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.detail.AppECommerceDetail1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.detail.AppECommerceDetail2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.detail.AppECommerceDetail3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.detail.AppECommerceDetail4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.detail.AppECommerceDetail5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.list.AppECommerceList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.list.AppECommerceList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.list.AppECommerceList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.list.AppECommerceList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.list.AppECommerceList5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.list.AppECommerceList6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.list.AppECommerceList7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.list.AppECommerceList8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.checkout.AppECommerceCheckout2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.checkout.AppECommerceCheckout3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.checkout.AppECommerceCheckout4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.checkout.AppECommerceCheckout5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.checkout.AppECommerceCheckout6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.basket.AppECommerceBasket1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.basket.AppECommerceBasket2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.basket.AppECommerceBasket3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.basket.AppECommerceBasket4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.shopinfo.AppECommerceShopInfo1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.shopinfo.AppECommerceShopInfo2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.order.AppECommerceOrder1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.order.AppECommerceOrder2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.order.AppECommerceOrder3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.order.AppECommerceOrder4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.profile.AppECommerceProfile1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.gallery.AppECommerceGallery1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.gallery.AppECommerceGallery2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.gallery.AppECommerceGallery3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.grid.AppECommerceGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.grid.AppECommerceGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.grid.AppECommerceGrid3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.grid.AppECommerceGrid4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.grid.AppECommerceGrid5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.grid.AppECommerceGrid6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.grid.AppECommerceGrid7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.grid.AppECommerceGrid8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.grid.AppECommerceGrid11Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.grid.AppECommerceGrid9Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.grid.AppECommerceGrid10Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.category.AppECommerceCategory1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.category.AppECommerceCategory2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.category.AppECommerceCategory3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.ecommerce.category.AppECommerceCategory4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- Wallpaper -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.home.AppWallpaperHome1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.home.AppWallpaperHome2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.home.AppWallpaperHome3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.home.AppWallpaperHome4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.grid.AppWallpaperGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.grid.AppWallpaperGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.grid.AppWallpaperGrid3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.grid.AppWallpaperGrid4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.grid.AppWallpaperGrid5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.grid.AppWallpaperGrid6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.list.AppWallpaperList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.list.AppWallpaperList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.list.AppWallpaperList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.category.AppWallpaperCategory1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.category.AppWallpaperCategory2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.category.AppWallpaperCategory3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.category.AppWallpaperCategory4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.detail.AppWallpaperDetail1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.detail.AppWallpaperDetail2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- finance -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.finance.home.AppFinanceHome1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.finance.home.AppFinanceHome2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.finance.home.AppFinanceHome3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.finance.report.AppFinanceReport1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.finance.dialog.AppFinanceDialog1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- User -->
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.wallpaper.list.AppWallpaperList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.profile.AppUserProfile1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.profile.AppUserProfile2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.profile.AppUserProfile3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.profile.AppUserProfile4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.login.AppUserLogin1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.login.AppUserLogin2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.login.AppUserLogin3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.login.AppUserLogin4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.signup.AppUserSignUp1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.signup.AppUserSignUp2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.signup.AppUserSignUp3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.signup.AppUserSignUp4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.forgotpassword.AppUserForgotPassword1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.forgotpassword.AppUserForgotPassword2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.forgotpassword.AppUserForgotPassword3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.user.forgotpassword.AppUserForgotPassword4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Features -->
+
+
+        <!-- Directory Dashboard -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard9Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.directory.FeatureDashboardDirectoryDashboard10Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.finance.FeatureDashboardFinanceDashboard1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.finance.FeatureDashboardFinanceDashboard2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.finance.FeatureDashboardFinanceDashboard3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- ECommerce Dashboard -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.ecommerce.FeatureDashboardECommerceDashboard1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.ecommerce.FeatureDashboardECommerceDashboard2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.ecommerce.FeatureDashboardECommerceDashboard3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.ecommerce.FeatureDashboardECommerceDashboard4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.ecommerce.FeatureDashboardECommerceDashboard5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- Wallpaper Dashboard -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.wallpaper.FeatureDashboardWallpaperDashboard1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.wallpaper.FeatureDashboardWallpaperDashboard2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.wallpaper.FeatureDashboardWallpaperDashboard3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.wallpaper.FeatureDashboardWallpaperDashboard4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Directory Place List -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.directory.FeatureListDirectoryPlaceList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.directory.FeatureListDirectoryPlaceList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.directory.FeatureListDirectoryPlaceList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.directory.FeatureListDirectoryPlaceList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.directory.FeatureListDirectoryPlaceList5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.directory.FeatureListDirectoryPlaceList6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.directory.FeatureListDirectoryPlaceList7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.directory.FeatureListDirectoryPlaceList8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.directory.FeatureListDirectoryPlaceList9Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Directory City List -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.directory.FeatureListDirectoryCityList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.directory.FeatureListDirectoryCityList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.directory.FeatureListDirectoryCityList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.directory.FeatureListDirectoryCityList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- ECommerce List -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.ecommerce.FeatureListECommerceItemList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.ecommerce.FeatureListECommerceItemList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.ecommerce.FeatureListECommerceItemList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.ecommerce.FeatureListECommerceItemList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.ecommerce.FeatureListECommerceItemList5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.ecommerce.FeatureListECommerceItemList6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.ecommerce.FeatureListECommerceItemList7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.ecommerce.FeatureListECommerceItemList8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.ecommerce.FeatureListECommerceCategoryList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.ecommerce.FeatureListECommerceCategoryList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Wallpaper List -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.wallpaper.FeatureListWallpaperPhotoList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.wallpaper.FeatureListWallpaperPhotoList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.wallpaper.FeatureListWallpaperPhotoList3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.wallpaper.FeatureListWallpaperPhotoList4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.wallpaper.FeatureListWallpaperCategoryList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.wallpaper.FeatureListWallpaperCategoryList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Directory Grid -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.directory.FeatureGridDirectoryPlaceGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.directory.FeatureGridDirectoryPlaceGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.directory.FeatureGridDirectoryPlaceGrid3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.directory.FeatureGridDirectoryPlaceGrid4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.directory.FeatureGridDirectoryPlaceGrid5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.directory.FeatureGridDirectoryPlaceGrid6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.directory.FeatureGridDirectoryCityGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Ecommerce Grid -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid8Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid9Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid10Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.ecommerce.FeatureGridECommerceItemGrid11Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.ecommerce.FeatureGridECommerceCategoryGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.ecommerce.FeatureGridECommerceCategoryGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Wallpaper Grid -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.wallpaper.FeatureGridWallpaperPhotoGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.wallpaper.FeatureGridWallpaperPhotoGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.wallpaper.FeatureGridWallpaperPhotoGrid3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.wallpaper.FeatureGridWallpaperPhotoGrid4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.wallpaper.FeatureGridWallpaperPhotoGrid5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.wallpaper.FeatureGridWallpaperPhotoGrid6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.wallpaper.FeatureGridWallpaperCategoryGrid1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.wallpaper.FeatureGridWallpaperCategoryGrid2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Directory Detail -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.detail.directory.FeatureDetailDirectoryPlaceDetail1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.detail.directory.FeatureDetailDirectoryPlaceDetail2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.detail.directory.FeatureDetailDirectoryPlaceDetail3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.detail.directory.FeatureDetailDirectoryPlaceDetail4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Ecommerce Detail -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.detail.ecommerce.FeatureDetailECommerceItemDetail1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.detail.ecommerce.FeatureDetailECommerceItemDetail2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.detail.ecommerce.FeatureDetailECommerceItemDetail3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.detail.ecommerce.FeatureDetailECommerceItemDetail4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.detail.ecommerce.FeatureDetailECommerceItemDetail5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Wallpaper Detail -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.detail.wallpaper.FeatureDetailWallpaperPhotoDetail1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.detail.wallpaper.FeatureDetailWallpaperPhotoDetail2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Basket -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.basket.FeatureBasketECommerceBasket1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.basket.FeatureBasketECommerceBasket2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.basket.FeatureBasketECommerceBasket3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.basket.FeatureBasketECommerceBasket4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!--Chat-->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.chat.general.FeatureChatGeneralChat1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.chat.general.FeatureChatGeneralChat2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Checkout -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.checkout.FeatureCheckoutECommerceCheckout1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.checkout.FeatureCheckoutECommerceCheckout2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.checkout.FeatureCheckoutECommerceCheckout3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.checkout.FeatureCheckoutECommerceCheckout4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.checkout.FeatureCheckoutECommerceCheckout5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.checkout.FeatureCheckoutECommerceCheckout6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Order History -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.order.ecommerce.FeatureOrderECommerceOrder1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.order.ecommerce.FeatureOrderECommerceOrder2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.order.ecommerce.FeatureOrderECommerceOrder3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.order.ecommerce.FeatureOrderECommerceOrder4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Search & Filter -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.filter.directory.FeatureFilterDirectoryFilter1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.filter.directory.FeatureFilterDirectoryFilter2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.filter.directory.FeatureFilterDirectoryFilter3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.filter.directory.FeatureFilterDirectoryFilter4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.filter.ecommerce.FeatureFilterECommerceFilter1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.filter.ecommerce.FeatureFilterECommerceFilter2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.filter.ecommerce.FeatureFilterECommerceFilter3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.filter.ecommerce.FeatureFilterECommerceFilter4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Gallery -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.gallery.directory.FeatureGalleryDirectoryGallery1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.gallery.directory.FeatureGalleryDirectoryGallery2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.gallery.directory.FeatureGalleryDirectoryGallery3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.gallery.directory.FeatureGalleryDirectoryGallery4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.gallery.ecommerce.FeatureGalleryECommerceGallery1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.gallery.ecommerce.FeatureGalleryECommerceGallery2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.gallery.ecommerce.FeatureGalleryECommerceGallery3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Map -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.map.directory.FeatureMapDirectoryMap1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.map.directory.FeatureMapDirectoryMap2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.map.directory.FeatureMapDirectoryMap3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.map.directory.FeatureMapDirectoryMap4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Profile -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.profile.general.FeatureProfileGeneralProfile1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.profile.general.FeatureProfileGeneralProfile2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.profile.general.FeatureProfileGeneralProfile3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.profile.general.FeatureProfileGeneralProfile4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.profile.directory.FeatureProfileDirectoryProfile1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.profile.directory.FeatureProfileDirectoryProfile2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.profile.directory.FeatureProfileDirectoryProfile3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.profile.directory.FeatureProfileDirectoryProfile4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.profile.ecommerce.FeatureProfileECommerceProfile1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.profile.ecommerce.FeatureProfileECommerceProfile2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.profile.ecommerce.FeatureProfileECommerceProfile3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Payment -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.payment.ecommerce.FeaturePaymentECommerceCardEntry1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.payment.ecommerce.FeaturePaymentECommerceCardOptions1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- General List -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.general.FeatureListGeneralExpandableListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.general.FeatureListGeneralDragAndDropListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.general.FeatureListGeneralSwipeToDismissListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.general.FeatureListGeneralSectionedListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.general.FeatureListGeneralStickyHeaderListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.general.FeatureListGeneralScrollToTopListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- Media General -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.media.general.FeatureMediaGeneralMP3Player1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.media.general.FeatureMediaGeneralMP3Player2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.media.general.videoplayer1.FeatureMediaGeneralVideoPlayer1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.media.general.videoplayer1.FeatureMediaGeneralVideoPlayer1PlayerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.media.general.videoplayer2.FeatureMediaGeneralVideoPlayer2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Menu -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.menu.general.FeatureMenuGeneralMenu1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.menu.general.FeatureMenuGeneralMenu2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.menu.general.FeatureMenuGeneralMenu3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.menu.general.FeatureMenuGeneralMenu4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.menu.general.FeatureMenuGeneralMenu5Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.menu.general.FeatureMenuGeneralMenu6Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.menu.general.FeatureMenuGeneralMenu7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Timeline -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.timeline.ecommerce.FeatureTimelineECommerceTimeline1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.timeline.general.FeatureTimelineGeneralTimeline1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.timeline.social.FeatureTimelineSocialTimeline1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Login -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.login.FeatureLoginGeneralLogin1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.login.FeatureLoginGeneralLogin2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.login.FeatureLoginGeneralLogin3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.login.FeatureLoginGeneralLogin4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Sign Up -->
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.signup.general.FeatureSignUpGeneralSignUp1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.signup.general.FeatureSignUpGeneralSignUp2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.signup.general.FeatureSignUpGeneralSignUp3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.signup.general.FeatureSignUpGeneralSignUp4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Forgot Password -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.forgotpassword.general.FeatureForgotPasswordGeneralForgotPassword1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.forgotpassword.general.FeatureForgotPasswordGeneralForgotPassword2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.forgotpassword.general.FeatureForgotPasswordGeneralForgotPassword3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.forgotpassword.general.FeatureForgotPasswordGeneralForgotPassword4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Dialog -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dialog.general.FeatureDialogGeneralSuccessDialog1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dialog.general.FeatureDialogGeneralErrorDialog1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dialog.general.FeatureDialogGeneralWarningDialog1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dialog.general.FeatureDialogGeneralConfirmDialog1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dialog.general.FeatureDialogGeneralFeedbackDialog1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Finance -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dialog.finance.FeatureDialogFinanceDialog1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Rating -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.rating.general.entry.FeatureRatingGeneralEntry1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.rating.general.list.FeatureRatingGeneralList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.rating.general.list.FeatureRatingGeneralList2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Stepper -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.stepper.general.FeatureStepperGeneralStepper1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.stepper.ecommerce.FeatureStepperECommerceStepper1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.stepper.quiz.FeatureStepperQuizStepper1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.stepper.quiz.FeatureStepperQuizStepper2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Load More -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.loadmore.general.FeatureLoadMoreGeneralOnScroll"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.loadmore.general.FeatureLoadMoreGeneralPullRefresh"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- GDPPR -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.gdpr.general.FeatureGdprGeneralGdpr1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.gdpr.general.FeatureGdprGeneralGdpr2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Not Found -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.notfound.general.FeatureNotFoundGeneralNoInternet1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.notfound.general.FeatureNotFoundGeneralNoData1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.notfound.general.FeatureNotFoundGeneralNoResult1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.notfound.general.FeatureNotFoundGeneralNoMessage1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Comment -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.comment.general.entry.FeatureCommentGeneralEntry1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.comment.general.entry.FeatureCommentGeneralEntry2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.comment.general.list.FeatureCommentGeneralList1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Walkthriugh -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.walkthrough.general.FeatureWalkthroughGeneralWalkthrough1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Splash Screen -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.splash.general.splash1.FeatureSplashGeneralSplashScreen1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.splash.general.splash2.FeatureSplashGeneralSplashScreen2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.splash.general.splash1.FeatureSplashGeneralSplashScreen1LayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.splash.general.splash2.FeatureSplashGeneralSplashScreen2LayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Coverflow -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.coverflow.general.FeatureCoverflowGeneralCoverflow1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.coverflow.general.FeatureCoverflowGeneralCoverflow2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Article -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.article.news.FeatureArticleNewsArticle1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.article.news.FeatureArticleNewsArticle2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.article.news.FeatureArticleNewsArticle3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.article.news.FeatureArticleNewsArticle4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Verification -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.verification.general.FeatureVerificationGeneralVerification1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.verification.general.FeatureVerificationGeneralVerification2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.verification.general.FeatureVerificationGeneralVerification3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Expandable -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.expandable.ecommerce.FeatureExpandableECommerceExpandable1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.expandable.ecommerce.FeatureExpandableECommerceExpandable2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Setting -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.setting.general.FeatureSettingGeneralSetting3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.setting.general.FeatureSettingGeneralSetting1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.setting.general.FeatureSettingGeneralSetting2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Report -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.report.FeatureReportFinanceReport1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- News App -->
+        <!-- News Home -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.home.AppNewsHome1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.home.AppNewsHome2Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Category Grid -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.category.AppNewsCategoryGrid1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.category.AppNewsCategoryGrid2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.category.AppNewsCategoryList1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.category.AppNewsCategoryList2Activity"
+            android:theme="@style/AppTheme" />
+
+
+        <!-- News Timeline -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.timeline.AppNewsTimeline1Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- ABout Us -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.aboutus.AppNewsAboutUs1Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Gallery -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.gallery.AppNewsGallery1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.gallery.AppNewsGallery2Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Detail -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.detail.AppNewsDetail1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.detail.AppNewsDetail2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.detail.AppNewsDetail3Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.detail.AppNewsDetail4Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- News List -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.list.AppNewsList1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.list.AppNewsList2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.list.AppNewsList3Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.list.AppNewsList4Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.list.AppNewsList5Activity"
+            android:theme="@style/AppTheme" />
+
+
+        <!-- News Grid -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.grid.AppNewsGrid1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.grid.AppNewsGrid2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.grid.AppNewsGrid3Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.grid.AppNewsGrid4Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.news.grid.AppNewsGrid5Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- News Dashboard -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.news.FeatureDashboardNewsDashboard1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.news.FeatureDashboardNewsDashboard2Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- News List -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.news.FeatureListNewsList1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.news.FeatureListNewsList2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.news.FeatureListNewsList3Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.news.FeatureListNewsList4Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.news.FeatureListNewsList5Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- News Category -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.news.FeatureListNewsCategoryList1Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.news.FeatureListNewsCategoryList2Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- News Grid -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.news.FeatureGridNewsGrid1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.news.FeatureGridNewsGrid2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.news.FeatureGridNewsGrid3Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.news.FeatureGridNewsGrid4Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.news.FeatureGridNewsGrid5Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- News Timeline -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.timeline.news.FeatureTimelineNewsTimeline1Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- News Gallery -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.gallery.news.FeatureGalleryNewsGallery1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.gallery.news.FeatureGalleryNewsGallery2Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- News Category Grid -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.news.FeatureGridNewsCategoryGrid1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.news.FeatureGridNewsCategoryGrid2Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- News About Us -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.aboutus.news.FeatureAboutusNewsAboutus1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.home.AppEducationHome1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.home.AppEducationHome2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.home.AppEducationHome3Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Detail -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.detail.AppEducationDetail1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.detail.AppEducationDetail2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.detail.AppEducationDetail3Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Edu Outline -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.outline.AppEducationOutline1Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Edu List -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.list.AppEducationList1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.list.AppEducationList2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.list.AppEducationList3Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.list.AppEducationList4Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.list.AppEducationList5Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- General TodoList Timeline -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.timeline.general.FeatureTimelineGeneralTimeline2Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Edu Grid -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.grid.AppEducationGrid1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.grid.AppEducationGrid2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.grid.AppEducationGrid3Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.grid.AppEducationGrid4Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.grid.AppEducationGrid5Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.category.AppEducationCategoryGrid1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.category.AppEducationCategoryList1Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Edu Course Collection -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.coursecollection.AppEducationCourseCollectionList1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.coursecollection.AppEducationCourseCollectionList2Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Edu About Us -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.aboutus.AppEducationAboutUs1Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Edu Profile -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.profile.AppEducationProfile1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.application.education.profile.AppEducationProfile2Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Edu Feature Dashboard -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.education.FeatureDashboardEducationDashboard1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.education.FeatureDashboardEducationDashboard2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.dashboard.education.FeatureDashboardEducationDashboard3Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Edu Feature List -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.education.FeatureListEducationVideoList1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.education.FeatureListEducationVideoList2Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.education.FeatureListEducationVideoList3Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.education.FeatureListEducationVideoList4Activity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.education.FeatureListEducationVideoList5Activity"
+            android:theme="@style/AppTheme" />
+
+
+        <!-- Edu Grid -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.education.FeatureGridEducationGrid1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.education.FeatureGridEducationGrid2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.education.FeatureGridEducationGrid3Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.education.FeatureGridEducationGrid4Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.education.FeatureGridEducationGrid5Activity"
+            android:theme="@style/AppTheme" />
+
+
+        <!-- Edu Detail -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.detail.education.FeatureDetailEducationDetail1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.detail.education.FeatureDetailEducationDetail2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.detail.education.FeatureDetailEducationDetail3Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Edu Category list -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.education.FeatureListEducationCategoryList1Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Edu Course Collection -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.education.FeatureListEducationCourseCollectionList1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.list.education.FeatureListEducationCourseCollectionList2Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Edu Cagtegory Grid 1 -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.grid.education.FeatureGridEducationCategoryGrid1Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Edu Profile -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.profile.education.FeatureProfileEducationProfile1Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.profile.education.FeatureProfileEducationProfile2Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Edu Outline -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.timeline.education.FeatureTimelineEducationOutline1Activity"
+            android:theme="@style/AppTheme" />
+
+        <!-- Edu About us -->
+        <activity
+            android:name="com.panaceasoft.pskotlinmaterial.activity.feature.aboutus.education.FeatureAboutusEducationAboutus1Activity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

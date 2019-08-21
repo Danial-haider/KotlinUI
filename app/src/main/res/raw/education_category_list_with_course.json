@@ -1,0 +1,48 @@
+[
+  {
+    "category_name":"Business",
+    "course_list":[
+      {
+        "course_name": "Digital Lifestyle"
+      },
+      {
+        "course_name": "Professional Development"
+      },
+      {
+        "course_name": "Marketing"
+      },
+      {
+        "course_name": "Leadership + Management"
+      }
+    ]
+  },
+  {
+    "category_name":"Technology",
+    "course_list":[
+      {
+        "course_name": "User Experience"
+      },
+      {
+        "course_name": "IT Infrastructure"
+      },
+      {
+        "course_name": "Software Development"
+      }
+    ]
+  },
+  {
+    "category_name":"Creative",
+    "course_list":[
+      {
+        "course_name": "Graphic Design"
+      },
+      {
+        "course_name": "Motion Graphics and VFX"
+      },
+      {
+        "course_name": "Photography"
+      }
+    ]
+  }
+
+]

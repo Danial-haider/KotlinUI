@@ -1,0 +1,52 @@
+[
+  {
+    "course_name": "Basic trigonometric ratios",
+    "course_list": [
+      {
+        "video_name":"The basic of trigonometry: an introduction to triangles.",
+        "status":"done"
+      },
+      {
+        "video_name":"Example: Using SOH CAH TOA",
+        "status":"done"
+      },
+      {
+        "video_name":"Basic trigonometry II",
+        "status":"progress"
+      },
+      {
+        "video_name":"Example: Trig to solve the sides and angles of a right triangle.",
+        "status":"not_yet"
+      },
+      {
+        "video_name":"Trigonometry 2",
+        "status":" not_yet"
+      }
+    ]
+  },
+  {
+    "course_name": "Trigonometric ratios and similarity",
+    "course_list": [
+      {
+        "video_name":"Similarity to define sine, cosine, and tangent.",
+        "status":"not_yet"
+      },
+      {
+        "video_name":"Sine and cosine of complements example.",
+        "status":"not_yet"
+      },
+      {
+        "video_name":"Showing relationship between cosine and sine of complements.",
+        "status":"not_yet"
+      },
+      {
+        "video_name":"Example with trig functions and ratios.",
+        "status":"not_yet"
+      },
+      {
+        "video_name":"Trigonometric functions.",
+        "status":"not_yet"
+      }
+    ]
+  }
+]

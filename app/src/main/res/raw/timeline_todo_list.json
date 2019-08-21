@@ -1,0 +1,51 @@
+[
+  {
+    "time":"08:00 PM",
+    "interval":"27min",
+    "note":"Call Daniel for meetup on friday.",
+    "color":"blue",
+    "is_important":"false"
+  },
+  {
+    "time":"09:00 PM",
+    "interval":"1h27min",
+    "note":"Go to the washing machine.",
+    "color":"green",
+    "is_important":"false"
+  },
+  {
+    "time":"10:00 PM",
+    "interval":"2h27min",
+    "note":"Call mon.",
+    "color":"orange",
+    "is_important":"true"
+  },
+  {
+    "time":"11:00 PM",
+    "interval":"3h27min",
+    "note":"Prepare Behance case study.",
+    "color":"blue",
+    "is_important":"false"
+  },
+  {
+    "time":"12:00 PM",
+    "interval":"4h27min",
+    "note":"Call John for meeting.",
+    "color":"green",
+    "is_important":"false"
+  },
+  {
+    "time":"13:00 PM",
+    "interval":"5h27min",
+    "note":"Call babysitter.",
+    "color":"blue",
+    "is_important":"false"
+  },
+  {
+    "time":"14:00 PM",
+    "interval":"6h27min",
+    "note":"Continue Behance case study.",
+    "color":"orange",
+    "is_important":"false"
+  }
+]

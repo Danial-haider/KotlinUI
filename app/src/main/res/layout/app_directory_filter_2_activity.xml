@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Filters"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/font_title_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:tint="@color/md_grey_600"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27"
+            app:srcCompat="@drawable/baseline_sortby_24" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="Sort By"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/font_body_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView26"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29">
+
+            <Button
+                android:id="@+id/relevanceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/space_2"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:fontFamily="@font/roboto"
+                android:padding="8dp"
+                android:text="Relevance"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/distanceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/space_2"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:fontFamily="@font/roboto"
+                android:padding="8dp"
+                android:text="Distance"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/ratingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:fontFamily="@font/roboto"
+                android:padding="8dp"
+                android:text="Rating"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="No Image"
+            android:scaleType="center"
+            android:tint="@color/md_grey_600"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:srcCompat="@drawable/baseline_filter_slide_24" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Filter By"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/font_body_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView34"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31">
+
+            <Button
+                android:id="@+id/filterBy1Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/space_2"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:fontFamily="@font/roboto"
+                android:text="5$"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/filterBy2Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/space_2"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:fontFamily="@font/roboto"
+                android:text="10$"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/filterBy3Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/space_2"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:fontFamily="@font/roboto"
+                android:text="100$"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/filterBy4Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/space_2"
+                android:background="@color/md_white_1000"
+                android:fontFamily="@font/roboto"
+                android:text="1000$"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <Button
+                android:id="@+id/openNowButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/space_2"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:fontFamily="@font/roboto"
+                android:text="Open Now"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/openAtButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:fontFamily="@font/roboto"
+                android:text="Open at..."
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView36"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:tint="@color/md_grey_600"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            app:srcCompat="@drawable/baseline_map_marker_24" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Places"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/font_body_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView36"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView37">
+
+            <Button
+                android:id="@+id/haveBeenButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text=" You've been"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/haveNotButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="You haven't been"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="You Saved"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/likeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="You Liked"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+
+            <Button
+                android:id="@+id/followButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="On list you've made or follow"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/recommendedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="Recommended by people you follow"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:tint="@color/md_grey_600"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+            app:srcCompat="@drawable/baseline_good_for_24" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Good For"
+            android:textColor="@color/colorTextLight"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/font_body_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView37"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23">
+
+            <Button
+                android:id="@+id/groupButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="Group"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/workingButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="Working"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/singlesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="Singles"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/datesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="Dates"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView38"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:tint="@color/md_grey_600"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+            app:srcCompat="@drawable/baseline_star_24" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Favourites"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/font_body_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView38"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView38">
+
+
+            <Button
+                android:id="@+id/acceptsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="Accepts credit cards"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/deliveryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="Delivery"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/happyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="Happy Hour"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/liveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="Live music"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+
+            <Button
+                android:id="@+id/outdoorButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="Outdoor seating"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+            <Button
+                android:id="@+id/parkingButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/md_white_1000"
+                android:drawableEnd="@drawable/baseline_add_filter_24"
+                android:fontFamily="@font/roboto"
+                android:padding="@dimen/space_12"
+                android:text="Parking"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_body_size" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

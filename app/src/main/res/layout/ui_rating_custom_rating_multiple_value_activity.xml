@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/md_blue_400"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_16"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <SeekBar
+                android:id="@+id/roomComfortSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="5"
+                android:paddingStart="@dimen/space_20"
+                android:paddingTop="@dimen/space_8"
+                android:paddingEnd="@dimen/space_20"
+                android:progress="3"
+                android:progressTint="@color/md_blue_400"
+                android:thumb="@drawable/ic_seek_thumb"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView413" />
+
+            <TextView
+                android:id="@+id/roomComfortTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
+                android:paddingTop="8dp"
+                android:text="3"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotelConditionSeekBar"
+                tools:text="0"
+                tools:textColor="@color/colorTextLight" />
+
+            <TextView
+                android:id="@+id/textView413"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:text="Room Comfort Standard"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintEnd_toStartOf="@+id/roomComfortTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotelConditionSeekBar" />
+
+            <SeekBar
+                android:id="@+id/hotelConditionSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="5"
+                android:paddingStart="@dimen/space_20"
+                android:paddingTop="@dimen/space_8"
+                android:paddingEnd="@dimen/space_20"
+                android:progress="3"
+                android:progressTint="@color/md_blue_400"
+                android:thumb="@drawable/ic_seek_thumb"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView412" />
+
+            <TextView
+                android:id="@+id/hotelConditionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
+                android:paddingTop="8dp"
+                android:text="3"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/staffPerformanceSeekBar"
+                tools:text="0"
+                tools:textColor="@color/colorTextLight" />
+
+            <TextView
+                android:id="@+id/textView412"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:text="Hotel Condition / Cleanliness"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintEnd_toStartOf="@+id/hotelConditionTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/staffPerformanceSeekBar" />
+
+            <SeekBar
+                android:id="@+id/staffPerformanceSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="5"
+                android:paddingStart="@dimen/space_20"
+                android:paddingTop="@dimen/space_8"
+                android:paddingEnd="@dimen/space_20"
+                android:progress="3"
+                android:progressTint="@color/md_blue_400"
+                android:thumb="@drawable/ic_seek_thumb"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView411" />
+
+            <TextView
+                android:id="@+id/staffPerformanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
+                android:paddingTop="8dp"
+                android:text="3"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/locationSeekBar"
+                tools:text="0"
+                tools:textColor="@color/colorTextLight" />
+
+            <TextView
+                android:id="@+id/textView411"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:text="Staff Performance"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintEnd_toStartOf="@+id/staffPerformanceTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/locationSeekBar" />
+
+            <SeekBar
+                android:id="@+id/locationSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="5"
+                android:paddingStart="@dimen/space_20"
+                android:paddingTop="@dimen/space_8"
+                android:paddingEnd="@dimen/space_20"
+                android:progress="3"
+                android:progressTint="@color/md_blue_400"
+                android:thumb="@drawable/ic_seek_thumb"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView410" />
+
+            <TextView
+                android:id="@+id/textView410"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:text="Location"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintEnd_toStartOf="@+id/locationTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/valueForMoneySeekBar" />
+
+            <TextView
+                android:id="@+id/locationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
+                android:paddingTop="8dp"
+                android:text="3"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/valueForMoneySeekBar"
+                tools:text="0"
+                tools:textColor="@color/colorTextLight" />
+
+            <TextView
+                android:id="@+id/valueForMoneyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
+                android:paddingTop="8dp"
+                android:text="3"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_black_1000"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintBottom_toBottomOf="@+id/textView406"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView406"
+                tools:text="0"
+                tools:textColor="@color/colorTextLight" />
+
+
+            <SeekBar
+                android:id="@+id/valueForMoneySeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="5"
+                android:paddingStart="@dimen/space_20"
+                android:paddingTop="@dimen/space_8"
+                android:paddingEnd="@dimen/space_20"
+                android:progress="3"
+                android:progressTint="@color/md_blue_400"
+                android:thumb="@drawable/ic_seek_thumb"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView406" />
+
+            <TextView
+                android:id="@+id/textView406"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:text="Value for Money"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintEnd_toStartOf="@+id/valueForMoneyTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView414"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="Message"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/roomComfortSeekBar" />
+
+
+            <EditText
+                android:id="@+id/editText18"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edittext_line_border"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:gravity="top"
+                android:hint="Message"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_body_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView414" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/ui_rating_custom_button_background"
+                android:text="Submit"
+                android:textColor="@color/md_white_1000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText18" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

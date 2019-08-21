@@ -1,0 +1,51 @@
+[{
+  "id": "product1",
+  "icon": "home9_flight",
+  "name": "Flights"
+},
+  {
+    "id": "product2",
+    "icon": "home9_hotel",
+    "name": "Hotels"
+  },
+  {
+    "id": "product3",
+    "icon": "home9_flight_hotel",
+    "name": "Flight + Hotel"
+  },
+  {
+    "id": "product4",
+    "icon": "home9_activities",
+    "name": "Attractions & Activities"
+  },
+  {
+    "id": "product5",
+    "icon": "home9_eats",
+    "name": "Eats"
+  },
+  {
+    "id": "product6",
+    "icon": "home9_train",
+    "name": "Trains"
+  },
+  {
+    "id": "product7",
+    "icon": "home9_bus",
+    "name": "Bus"
+  },
+  {
+    "id": "product8",
+    "icon": "home9_airport",
+    "name": "Airport Transport"
+  },
+  {
+    "id": "product9",
+    "icon": "home9_rental",
+    "name": "Car Rental"
+  },
+  {
+  "id": "product9",
+  "icon": "home9_rental",
+  "name": "Car Rental"
+}
+]

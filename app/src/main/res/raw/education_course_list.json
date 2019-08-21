@@ -1,0 +1,133 @@
+[
+  {
+    "title":"Early math",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "category":"Math",
+    "length":"1h 30mins",
+    "image":"education_img_1",
+    "viewCount":"20,000",
+    "status":"Started",
+    "percent":"10"
+  },
+  {
+    "title":"Arithmetic",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "category":"Math",
+    "length":"2h 10mins",
+    "image":"education_img_2",
+    "viewCount":"21,000",
+    "status":"Not Started",
+    "percent":"0"
+  },
+  {
+    "title":"Algebra Basic",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "category":"Math",
+    "length":"3h 30mins",
+    "image":"education_img_3",
+    "viewCount":"30,000",
+    "status":"Not Started",
+    "percent":"0"
+  },
+  {
+    "title":"Geometry",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "category":"Math",
+    "length":"3h 20mins",
+    "image":"education_img_4",
+    "viewCount":"23,000",
+    "status":"Not Started",
+    "percent":"0"
+  },
+  {
+    "title":"Trigonometry",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "category":"Math",
+    "length":"1h 20mins",
+    "image":"education_img_5",
+    "viewCount":"13,000",
+    "status":"Not Started",
+    "percent":"0"
+  },
+  {
+    "title":"Biology",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "category":"Science",
+    "length":"1h 20mins",
+    "image":"education_img_6",
+    "viewCount":"15,000",
+    "status":"Not Started",
+    "percent":"0"
+  },
+  {
+    "title":"Chemistry",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "category":"Science",
+    "length":"3h 20mins",
+    "image":"education_img_7",
+    "viewCount":"35,000",
+    "status":"Not Started",
+    "percent":"0"
+  },
+  {
+    "title":"Physics",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "category":"Science",
+    "length":"2h 20mins",
+    "image":"education_img_8",
+    "viewCount":"25,200",
+    "status":"Started",
+    "percent":"20"
+  },
+  {
+    "title":"Organic Chemistry",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "category":"Science",
+    "length":"3h 20mins",
+    "image":"education_img_9",
+    "viewCount":"35,000",
+    "status":"Not Started",
+    "percent":"0"
+  },
+  {
+    "title":"Microeconomics",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "category":"Economic",
+    "length":"3h 20mins",
+    "image":"education_img_10",
+    "viewCount":"55,000",
+    "status":"Started",
+    "percent":"40"
+  },
+  {
+    "title":"Macroeconomics and finance",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "category":"Economic",
+    "length":"4h 20mins",
+    "image":"education_img_11",
+    "viewCount":"56,000",
+    "status":"Started",
+    "percent":"20"
+  },
+  {
+    "title":"Finance & capital markets",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "category":"Economic",
+    "length":"2h 20mins",
+    "image":"education_img_12",
+    "viewCount":"15,000",
+    "status":"Not Started",
+    "percent":"0"
+  },
+  {
+    "title":"Entrepreneurship",
+    "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut lectus eros. Quisque porta pretium commodo.",
+    "category":"Economic",
+    "length":"5h 20mins",
+    "image":"education_img_13",
+    "viewCount":"75,000",
+    "status":"Started",
+    "percent":"20"
+  }
+
+]

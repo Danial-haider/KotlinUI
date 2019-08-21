@@ -1,0 +1,42 @@
+[
+  {
+    "name":"Linear Regression",
+    "status":"In-Progress",
+    "image":"education_course_1_img",
+    "progress":"20",
+    "type":"NANO-DEGREE PROGRAM",
+    "color":"green"
+  },
+  {
+    "name":"Logistic Regression",
+    "status":"Not Started",
+    "image":"education_course_2_img",
+    "progress":"0",
+    "type":"NANO-DEGREE PROGRAM",
+    "color":"yellow"
+  },
+  {
+    "name":"Decision Trees",
+    "status":"Not Started",
+    "image":"education_course_3_img",
+    "progress":"0",
+    "type":"NANO-DEGREE PROGRAM",
+    "color":"blue"
+  },
+  {
+    "name":"Naive Bayes",
+    "status":"Not Started",
+    "image":"education_course_4_img",
+    "progress":"0",
+    "type":"NANO-DEGREE PROGRAM",
+    "color":"red"
+  },
+  {
+    "name":"Support Vector Machines",
+    "status":"Not Started",
+    "image":"education_course_5_img",
+    "progress":"0",
+    "type":"NANO-DEGREE PROGRAM",
+    "color":"orange"
+  }
+]

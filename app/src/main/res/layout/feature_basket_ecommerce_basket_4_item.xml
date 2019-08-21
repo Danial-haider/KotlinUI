@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/holderCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_4"
+        android:layout_marginEnd="@dimen/space_4"
+        android:layout_marginStart="@dimen/space_4"
+        android:layout_marginTop="@dimen/space_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sizeTitleTextView"
+                android:layout_width="0dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Size : "
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_800"
+                android:textSize="@dimen/font_body_s_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/itemImageView"
+                app:layout_constraintTop_toBottomOf="@+id/itemNameTextView" />
+
+            <TextView
+                android:id="@+id/sizeTextView"
+                android:layout_width="0dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Medium"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_800"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintStart_toEndOf="@+id/sizeTitleTextView"
+                app:layout_constraintTop_toBottomOf="@+id/itemNameTextView" />
+
+            <TextView
+                android:id="@+id/colorTitleTextView"
+                android:layout_width="0dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Color : "
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_800"
+                android:textSize="@dimen/font_body_s_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/itemImageView"
+                app:layout_constraintTop_toBottomOf="@+id/sizeTitleTextView" />
+
+            <TextView
+                android:id="@+id/colorTextView"
+                android:layout_width="0dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Pink"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_800"
+                android:textSize="@dimen/font_body_s_size"
+                app:layout_constraintStart_toEndOf="@+id/colorTitleTextView"
+                app:layout_constraintTop_toTopOf="@+id/colorTitleTextView" />
+
+            <ImageView
+                android:id="@+id/itemImageView"
+                android:layout_width="120dp"
+                android:layout_height="0dp"
+                android:background="@drawable/layout_left_rounded_rectangle"
+                android:contentDescription="TODO"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/baseline_image_black_24" />
+
+            <TextView
+                android:id="@+id/itemNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Name"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/itemImageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="$ 80"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_title_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/removeTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/removeTextView" />
+
+            <TextView
+                android:id="@+id/saveTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Save for later"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_blue_600"
+                android:textSize="@dimen/font_body_s_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/itemImageView"
+                app:layout_constraintTop_toBottomOf="@+id/noSpinner" />
+
+            <TextView
+                android:id="@+id/removeTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Remove"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_blue_600"
+                android:textSize="@dimen/font_body_s_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/priceTextView4"
+                app:layout_constraintTop_toTopOf="@+id/saveTextView" />
+
+            <TextView
+                android:id="@+id/priceTextView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="|"
+                android:textAlignment="viewStart"
+                android:textColor="@color/md_grey_800"
+                android:textSize="@dimen/font_body_s_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/saveTextView"
+                app:layout_constraintTop_toTopOf="@+id/saveTextView" />
+
+            <Spinner
+                android:id="@+id/noSpinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/spinner_background"
+                app:layout_constraintStart_toEndOf="@+id/itemImageView"
+                app:layout_constraintTop_toBottomOf="@+id/colorTitleTextView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

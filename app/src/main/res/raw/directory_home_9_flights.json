@@ -1,0 +1,49 @@
+[{
+  "id": "flight1",
+  "image": "home9_city_5",
+  "country": "Seoul",
+  "price": "35 $",
+  "duration": "25Aug 30May2018",
+  "description": "pet person staring"
+},
+  {
+    "id": "flight2",
+    "image": "home9_city_6",
+    "country": "Kuala Lumpur",
+    "price": "20 $",
+    "duration": "25Aug 30May2018",
+    "description": "pet person staring"
+  },
+  {
+    "id": "flight3",
+    "image": "sg_clarke_quay",
+    "country": "Singapore",
+    "price": "35 $",
+    "duration": "25Aug 30May2018",
+    "description": "pet person staring"
+  },
+  {
+    "id": "flight4",
+    "image": "home9_city_1",
+    "country": "Seoul",
+    "price": "35 $",
+    "duration": "25Aug 30May2018",
+    "description": "pet person staring"
+  },
+  {
+    "id": "flight5",
+    "image": "home9_city_2",
+    "country": "Kuala Lumpur",
+    "price": "20 $",
+    "duration": "25Aug 30May2018",
+    "description": "pet person staring"
+  },
+  {
+    "id": "flight6",
+    "image": "sg_clarke_quay",
+    "country": "Singapore",
+    "price": "35 $",
+    "duration": "25Aug 30May2018",
+    "description": "pet person staring"
+  }
+]

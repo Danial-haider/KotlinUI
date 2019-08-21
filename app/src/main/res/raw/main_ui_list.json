@@ -1,0 +1,1550 @@
+[
+  {
+    "id": "ad_view",
+    "name": "AdView",
+    "image_name": "baseline_adview_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiAdViewBannerActivity",
+        "name": "AdView Banner",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiAdViewFullScreenActivity",
+        "name": "AdView Fullscreen",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "app_bar_layout_&_toolbar",
+    "name": "Appbar Layout & Toolbar",
+    "image_name": "baseline_appbar_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiAppBarLayoutAndToolbarBasicAppbarLayoutActivity",
+        "name": "Basic Appbar Layout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiAppBarLayoutAndToolbarCollapseAndPinActivity",
+        "name": "Collapse and Pin",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiAppBarLayoutAndToolbarCollapsingAppbarLayoutActivity",
+        "name": "Collapsing Appbar Layout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bottom_app_bar",
+    "name": "Bottom App Bar",
+    "image_name": "baseline_bottom_app_bar_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiBottomAppBarBasicBottomNavigationViewActivity",
+        "name": "Basic Bottom Navigation View",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiBottomAppBarWithFabActivity",
+        "name": "BottomAppBar with FAB",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiBottomAppBarBottomNavigationViewFabActivity",
+        "name": "Bottom Navigation View with FAB",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiBottomAppBarBottomNavigationViewWithIconActivity",
+        "name": "Bottom Navigation View with Icon",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiBottomAppBarCustomColorBottomNavigationViewActivity",
+        "name": "Custom Color",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiBottomAppBarOnScrollHideBottomNavigationViewActivity",
+        "name": "On Scroll Hide",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiBottomAppBarShiftingBottomNavigationViewActivity",
+        "name": "Shifting Bottom Navigation View",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bottom_sheet",
+    "name": "Bottom Sheet",
+    "image_name": "baseline_bottom_sheet_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiBottomSheetBasicBottomSheetActivity",
+        "name": "Basic Bottom Sheets",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiBottomSheetBottomSheetDialogActivity",
+        "name": "Bottom Sheet Dialog",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiBottomSheetFloatingBottomSheetActivity",
+        "name": "Floating Bottom Sheets",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "buttons",
+    "name": "Buttons",
+    "image_name": "baseline_button_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiButtonBasicButtonActivity",
+        "name": "Basic Button",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiButtonIconActivity",
+        "name": "Button With Icons",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiButtonRoundedButtonActivity",
+        "name": "Rounded Button",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "calendar",
+    "name": "Calendar",
+    "image_name": "baseline_calendar_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiCalendarBasicCalendarActivity",
+        "name": "Basic Calendar",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cards",
+    "name": "Cards",
+    "image_name": "baseline_cards_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiCardsBasicCardViewActivity",
+        "name": "Basic Card View",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiCardsCardViewPropertiesActivity",
+        "name": "Card View Properties",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiCardsCardViewOverlapActivity",
+        "name": "Overlap Card View",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "checkbox",
+    "name": "Checkbox",
+    "image_name": "baseline_checkbox_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiCheckboxBasicCheckboxActivity",
+        "name": "Basic Checkbox",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiCheckboxRoundedCheckboxActivity",
+        "name": "Rounded Checkbox",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chips",
+    "name": "Chips",
+    "image_name": "baseline_chips_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiChipsBasicChips1Activity",
+        "name": "Basic Chips 1",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiChipsFlexBoxAdjustmentActivity",
+        "name": "FlexBox Adjustment",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiChipsFlexBoxDirectionActivity",
+        "name": "FlexBox Direction",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dialogs",
+    "name": "Dialogs",
+    "image_name": "baseline_dialog_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiDialogsDialogAlertActivity",
+        "name": "Basic Alert Dialog",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiDialogsDialogConfirmActivity",
+        "name": "Basic Confirm Dialog",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiDialogsDialogCustomActivity",
+        "name": "Basic Custom Dialog",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiDialogsDialogInfoActivity",
+        "name": "Basic Info Dialog",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiDialogsDialogMultiChoiceActivity",
+        "name": "Basic Multi Choice Dialog",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiDialogsDialogSingleChoiceActivity",
+        "name": "Basic Single Choice Dialog",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiDialogsDialogSuccessActivity",
+        "name": "Basic Success Dialog",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+      //      {
+      //        "id": "xxxxxxx",
+      //        "name": "Custom GDPR Dialog",
+      //        "image_name": "",
+      //        "is_new": "false",
+      //        "third_level_objects": [
+      //        ]
+      //      }
+    ]
+  },
+  {
+    "id": "edit_text",
+    "name": "EditText",
+    "image_name": "baseline_edittext_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiEditTextEditTextBasicActivity",
+        "name": "Basic EditText",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiEditTextEditTextDatetimeActivity",
+        "name": "Date Time And Number EditText",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiEditTextFormattedEditTextActivity",
+        "name": "Formatted Edit Text",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "expandable",
+    "name": "Expandable",
+    "image_name": "baseline_expandable_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiExpandableExpandable1Activity",
+        "name": "Expandable 1",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiExpandableExpandable2Activity",
+        "name": "Expandable 2",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fab",
+    "name": "FAB",
+    "image_name": "baseline_fab_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiFabBasicFABActivity",
+        "name": "Basic FAB",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiFabHorizontalSubMenuFabActivity",
+        "name": "Horizontal SubMenu FAB",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiFabSubMenuFabActivity",
+        "name": "SubMenu FAB without Text",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiFabSubMenuWithTextFabActivity",
+        "name": "SubMenu FAB with Text",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "font",
+    "name": "Font",
+    "image_name": "baseline_font_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiFontBasicFontActivity",
+        "name": "Basic Font",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiFontCustomFontActivity",
+        "name": "Custom Fonts",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fragment",
+    "name": "Fragment",
+    "image_name": "baseline_fragment_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiFragmentBasicFragmentFullInsideActivity",
+        "name": "Basic Fragment (Full inside activity)",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiFragmentBasicFragmentActivity",
+        "name": "Basic (Some part only)",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+
+      //      {
+      //        "id": "xxxxx",
+      //        "name": "Dialog with fragment",
+      //        "image_name": "",
+      //        "is_new": "false",
+      //        "third_level_objects": [
+      //
+      //        ]
+      //      }
+    ]
+  },
+  {
+    "id": "grid",
+    "name": "Grid",
+    "image_name": "baseline_grid_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiGridBasicGridActivity",
+        "name": "Basic Grid",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiGridGridWithThreeColumnsActivity",
+        "name": "Grid with 3 Columns",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiGridGridWithAlphaViewActivity",
+        "name": "Grid with alpha view",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiGridGridWithMultipleLineIconActivity",
+        "name": "Grid with Multiple Line Icon",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiGridGridWithMultipleTextLinesActivity",
+        "name": "Grid with Multiple Text Lines",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiGridGridWithSingleLineIconActivity",
+        "name": "Grid with Single Line Icon",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiGridGridWithSingleTextLineActivity",
+        "name": "Grid with Single Text Line",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiGridPinterestGridActivity",
+        "name": "Pinterest Grid",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiGridSectionedGridActivity",
+        "name": "Sectioned Grid",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "image_button",
+    "name": "ImageButton",
+    "image_name": "baseline_image_button_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiImageButtonBasicImageButtonActivity",
+        "name": "Basic Image Button",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "image_view",
+    "name": "ImageView",
+    "image_name": "baseline_image_view_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiImageViewImageViewBasicActivity",
+        "name": "Basic ImageView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiImageViewImageViewCircleShapeActivity",
+        "name": "Circle Shape",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiImageViewImageViewScaleTypeActivity",
+        "name": "Scale Type",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "include",
+    "name": "Include",
+    "image_name": "baseline_include_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiIncludeBasicIncludeActivity",
+        "name": "Basic",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "layout",
+    "name": "Layout",
+    "image_name": "baseline_layout_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "ui_constraint_layout",
+        "name": "Constraint Layout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLayoutConstraintLayoutAdjustViewActivity",
+            "name": "Adjust View",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiLayoutConstraintLayoutBasicActivity",
+            "name": "Basic Constraint Layout",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiLayoutConstraintLayoutChainActivity",
+            "name": "Chain",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_frame_layout",
+        "name": "Frame Layout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLayoutFrameLayoutBasicActivity",
+            "name": "Basic Frame Layout",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_gridlayout",
+        "name": "GridLayout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLayoutGridLayoutBasicActivity",
+            "name": "Basic GridLayout",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_gridview",
+        "name": "GridView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLayoutGridViewBasicActivity",
+            "name": "Basic GridView",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_linear_layout",
+        "name": "Linear Layout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLayoutLinearLayoutBasicActivity",
+            "name": "Basic Linear Layout",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_listview",
+        "name": "ListView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLayoutListViewBasicActivity",
+            "name": "Basic ListView",
+            "image_name": "",
+            "is_new": "false"
+          },
+          {
+            "id": "UiLayoutListViewCustomActivity",
+            "name": "Custom ListView",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_relativelayout",
+        "name": "RelativeLayout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLayoutRelativeLayoutBasicActivity",
+            "name": "Basic Relative Layout",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      },
+      {
+        "id": "ui_table_layout",
+        "name": "Table Layout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+          {
+            "id": "UiLayoutTableLayoutBasicActivity",
+            "name": "Basic Table Layout",
+            "image_name": "",
+            "is_new": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "list",
+    "name": "List",
+    "image_name": "baseline_list_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiListBasicListActivity",
+        "name": "Basic List",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiListDragAndDropListActivity",
+        "name": "Drag and Drop List",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiListExpandableListActivity",
+        "name": "Expandable List",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiListMultipleSelectionListActivity",
+        "name": "Multiple Selection",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiListScrollToTopListActivity",
+        "name": "Scroll To Top List",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiListSectionedListActivity",
+        "name": "Sectioned List",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiListStickyHeaderListActivity",
+        "name": "Sticky Header List",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiListSwipeToDismissListActivity",
+        "name": "Swipe To Dismiss List",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiListSwipeToDismissListWithConfirmActivity",
+        "name": "Swipe To Dismiss with Confirm List",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "map_view",
+    "name": "Map View",
+    "image_name": "baseline_map_view_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiMapViewsBasicMapViewActivity",
+        "name": "Basic MapView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiMapViewsMapViewCustomPinActivity",
+        "name": "MapView with Custom Pin",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiMapViewsSupportMapFragmentActivity",
+        "name": "Support Map Fragment",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "navigation_drawer",
+    "name": "Navigation Drawer",
+    "image_name": "baseline_navigation_drawer_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiNavigationDrawerBasicNavigationDrawerActivity",
+        "name": "Basic Navigation Drawer",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiNavigationDrawerNavigationDrawer1Activity",
+        "name": "Navigation Drawer 1",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiNavigationDrawerNavigationDrawer2Activity",
+        "name": "Navigation Drawer 2",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiNavigationDrawerNavigationDrawer3Activity",
+        "name": "Navigation Drawer 3",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiNavigationDrawerNavigationDrawer4Activity",
+        "name": "Navigation Drawer 4",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiNavigationDrawerNavigationDrawer5Activity",
+        "name": "Navigation Drawer 5",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiNavigationDrawerNavigationDrawer6Activity",
+        "name": "Navigation Drawer 6",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiNavigationDrawerNavigationDrawer7Activity",
+        "name": "Navigation Drawer 7",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pickers",
+    "name": "Pickers",
+    "image_name": "baseline_pickers_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiPickersDatePickerActivity",
+        "name": "Date Picker",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiPickersTimePickerActivity",
+        "name": "Time Picker",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "progress",
+    "name": "Progress",
+    "image_name": "baseline_progress_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiProgressProgressBarBasicActivity",
+        "name": "Basic ProgressBar",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiProgressProgressBarHorizontalActivity",
+        "name": "Horizontal ProgressBar",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiProgressLinearBottomProgressActivity",
+        "name": "Linear Bottom Progress",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiProgressLinearCenterProgressActivity",
+        "name": "Linear Center Progress",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiProgressLinearTopProgressActivity",
+        "name": "Linear Top Progress",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiProgressOnScrollProgressActivity",
+        "name": "On scroll Progress",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiProgressPullRefreshProgressActivity",
+        "name": "Pull Refresh Progress",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "radio_button",
+    "name": "Radio Button",
+    "image_name": "baseline_radio_button_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiRadioButtonBasicRadioButtonActivity",
+        "name": "Basic Radio Button",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiRadioButtonCustomRadioButtonActivity",
+        "name": "Custom Radio Button",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rating",
+    "name": "Rating",
+    "image_name": "baseline_rating_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiRatingRatingBarBasicActivity",
+        "name": "Basic RatingBar",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiRatingCustomRatingMultipleValueActivity",
+        "name": "Custom Rating Multiple",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiRatingPopupRatingActivity",
+        "name": "Popup Rating",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "request_focus",
+    "name": "Request Focus",
+    "image_name": "baseline_request_focus_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiRequestFocusBasicRequestFocusActivity",
+        "name": "Basic Request Focus",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiRequestFocusRequestFocusCodeActivity",
+        "name": "Request Focus via Code",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scroll_view",
+    "name": "Scroll View",
+    "image_name": "baseline_scroll_view_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiScrollViewHorizontalScrollViewActivity",
+        "name": "Horizontal ScrollView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiScrollViewNestedScrollViewActivity",
+        "name": "Nested ScrollView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiScrollViewVerticalScrollViewActivity",
+        "name": "Vertical ScrollView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "search_view",
+    "name": "SearchView",
+    "image_name": "baseline_search_view_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiSearchViewSearchViewBasicActivity",
+        "name": "Basic SearchView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiSearchViewToolbarSearchViewActivity",
+        "name": "Toolbar SearchView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "seekbar",
+    "name": "Seekbar",
+    "image_name": "baseline_seekbar_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiSeekBarSeekBarBasicActivity",
+        "name": "Basic SeekBar",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiSeekBarSeekBarDiscreteActivity",
+        "name": "SeekBar(Discrete)",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "snack_bars",
+    "name": "Snackbars",
+    "image_name": "baseline_snackbars_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiSnackBarsSnackBarBasicActivity",
+        "name": "Basic SnackBar",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiSnackBarsCustomSnackBarActivity",
+        "name": "Custom SnackBar",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiSnackBarsSnackBarActionButtonActivity",
+        "name": "SnackBar with Action Button",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiSnackBarsSnackBarCustomColorActivity",
+        "name": "SnackBar with Custom Color",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiSnackBarsSnackBarAndLiftFabActivity",
+        "name": "SnackBar and Lift Fab",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spinner",
+    "name": "Spinner",
+    "image_name": "baseline_spinner_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiSpinnerBasicSpinnerActivity",
+        "name": "Basic Spinner",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiSpinnerCustomSpinnerActivity",
+        "name": "Custom Spinner",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "steppers",
+    "name": "Steppers",
+    "image_name": "baseline_steppers_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiStepperBasicSteppersTextActivity",
+        "name": "Basic Steppers(Text)",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiStepperDotsStepperActivity",
+        "name": "Dots",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiStepperProgressStepperActivity",
+        "name": "Progress",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "surface_view",
+    "name": "Surface View",
+    "image_name": "baseline_surface_view_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiSurfaceViewSurfaceViewBasicActivity",
+        "name": "Basic Surface View",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "switch_button",
+    "name": "Switch Button",
+    "image_name": "baseline_switch_button_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiSwitchButtonBasicSwitchActivity",
+        "name": "Basic Switch Button",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tabs",
+    "name": "Tabs",
+    "image_name": "baseline_tabs_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiTabsBasicTabLayoutActivity",
+        "name": "Basic TabLayout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiTabsScrollableTabLayoutActivity",
+        "name": "Scrollable TabLayout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiTabsStickyTabLayoutActivity",
+        "name": "Sticky TabLayout",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiTabsTabLayoutWithIconActivity",
+        "name": "Tab Layout with Icon ",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiTabsTabLayoutWithTextAndIconActivity",
+        "name": "Tab Layout with Text & Icon",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "text",
+    "name": "Text",
+    "image_name": "baseline_text_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiTextTextViewAdvancedActivity",
+        "name": "Advanced TextView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiTextTextViewBasicActivity",
+        "name": "Basic TextView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "texture_view",
+    "name": "Texture View",
+    "image_name": "baseline_texture_view_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiTextureViewTextureViewBasicActivity",
+        "name": "Basic Texture",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "toasts",
+    "name": "Toasts",
+    "image_name": "baseline_toasts_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiToastBasicToastActivity",
+        "name": "Basic Toasts",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiToastCustomToastActivity",
+        "name": "Custom Toasts",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "toggle_button",
+    "name": "Toggle Button",
+    "image_name": "baseline_toggle_button_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiToggleButtonBasicToggleButtonActivity",
+        "name": "Basic Toggle Button",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "video_with_web_url",
+    "name": "Video with Web Url",
+    "image_name": "baseline_video_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiVideoViewVideoViewBasicActivity",
+        "name": "VideoView with Web Url",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "view_stub",
+    "name": "View Stub",
+    "image_name": "baseline_view_stub_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiViewStubBasicViewStubActivity",
+        "name": "Basic ViewStub",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  },
+  {
+    "id": "web_view",
+    "name": "Web View",
+    "image_name": "baseline_webview_grey_24",
+    "is_new": "false",
+    "second_level_objects": [
+      {
+        "id": "UiWebViewWebViewBasicActivity",
+        "name": "Basic WebView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      },
+      {
+        "id": "UiWebViewWebViewYouTubeActivity",
+        "name": "YouTube Video in WebView",
+        "image_name": "",
+        "is_new": "false",
+        "third_level_objects": [
+        ]
+      }
+    ]
+  }
+]

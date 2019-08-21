@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/notification_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="@dimen/space_8"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/button_round_corner"
+        android:padding="@dimen/space_2"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/font_body_xs_size"
+        tools:text="9+" />
+
+</FrameLayout>

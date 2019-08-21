@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainAboutUs">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_grey_200"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/closeImageButton"
+                style="@style/PSButton.Default.Borderless"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:tint="@color/md_grey_600"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_circle_close_black_24" />
+
+            <TextView
+                android:id="@+id/textView301"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:text="Your Mentor"
+                android:textAlignment="center"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_h6_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/closeImageButton" />
+
+            <TextView
+                android:id="@+id/textView302"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/roboto"
+                android:lineSpacingExtra="8sp"
+                android:text="Take a minute to read about your mentor's background."
+                android:textAlignment="center"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_body_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView301" />
+
+            <View
+                android:id="@+id/view107"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView302" />
+
+            <View
+                android:id="@+id/view109"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/view_round_corner_light_green"
+                app:layout_constraintBottom_toBottomOf="@+id/view107"
+                app:layout_constraintEnd_toEndOf="@+id/view107"
+                app:layout_constraintStart_toStartOf="@+id/view107"
+                app:layout_constraintTop_toTopOf="@+id/view107" />
+
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/view107"
+                app:layout_constraintStart_toStartOf="@+id/view107"
+                app:layout_constraintTop_toTopOf="@+id/view107"
+                app:srcCompat="@drawable/baseline_image_black_24"
+                tools:srcCompat="@drawable/baseline_image_black_24" />
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_round_corner_green"
+                android:fontFamily="@font/roboto_medium"
+                android:text="START MESSAGE"
+                android:textAlignment="center"
+                android:textColor="@color/md_grey_200"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view109" />
+
+            <TextView
+                android:id="@+id/textView305"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/roboto"
+                android:text="John Doe"
+                android:textAlignment="center"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintEnd_toEndOf="@+id/view107"
+                app:layout_constraintStart_toStartOf="@+id/view109"
+                app:layout_constraintTop_toBottomOf="@+id/profileImageView" />
+
+            <TextView
+                android:id="@+id/textView306"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/roboto"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/dummy_small_text"
+                android:textAlignment="center"
+                android:textColor="@color/md_grey_600"
+                android:textSize="@dimen/font_title_size"
+                app:layout_constraintBottom_toBottomOf="@+id/view109"
+                app:layout_constraintEnd_toEndOf="@+id/view107"
+                app:layout_constraintStart_toStartOf="@+id/view107"
+                app:layout_constraintTop_toBottomOf="@+id/textView305" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

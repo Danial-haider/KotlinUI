@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_16"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- Basic -->
+
+        <LinearLayout
+            android:id="@+id/content1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_16"
+            android:layout_marginStart="@dimen/space_16"
+            android:layout_marginTop="@dimen/space_16"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Basic"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_title_size"
+                android:textStyle="bold"
+                tools:text=""
+                tools:textColor="@color/colorTextLight" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/seekBarTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingEnd="@dimen/space_16"
+            android:paddingStart="@dimen/space_16"
+            android:paddingTop="@dimen/space_8"
+            android:text="Basic"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/font_title_size"
+            tools:text="0"
+            tools:textColor="@color/colorTextLight" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:paddingEnd="@dimen/space_20"
+            android:paddingStart="@dimen/space_20"
+            android:paddingTop="@dimen/space_8"
+            android:progress="50" />
+
+
+        <!-- Custom Thumb -->
+
+        <LinearLayout
+            android:id="@+id/content2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_16"
+            android:layout_marginStart="@dimen/space_16"
+            android:layout_marginTop="@dimen/space_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Custom Thumb"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_title_size"
+                android:textStyle="bold"
+                tools:text="Basic"
+                tools:textColor="@color/colorTextLight" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/seekBarTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingEnd="@dimen/space_16"
+            android:paddingStart="@dimen/space_16"
+            android:paddingTop="@dimen/space_8"
+            android:text="Basic"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/font_title_size"
+            tools:text="0"
+            tools:textColor="@color/colorTextLight" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:paddingEnd="@dimen/space_20"
+            android:paddingStart="@dimen/space_20"
+            android:paddingTop="@dimen/space_8"
+            android:progress="50"
+            android:thumb="@drawable/baseline_code_black_24"
+
+            />
+
+
+        <!-- Custom Progress -->
+
+        <LinearLayout
+            android:id="@+id/content3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_16"
+            android:layout_marginStart="@dimen/space_16"
+            android:layout_marginTop="@dimen/space_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Custom Progress"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/font_title_size"
+                android:textStyle="bold"
+                tools:text="Basic"
+                tools:textColor="@color/colorTextLight" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/seekBarTextView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingEnd="@dimen/space_16"
+            android:paddingStart="@dimen/space_16"
+            android:paddingTop="@dimen/space_8"
+            android:text="Basic"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/font_title_size"
+            tools:text="0"
+            tools:textColor="@color/colorTextLight" />
+
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:paddingEnd="@dimen/space_20"
+            android:paddingStart="@dimen/space_20"
+            android:paddingTop="@dimen/space_8"
+            android:progress="50"
+            android:progressDrawable="@drawable/seekbar_progress"
+            android:thumb="@drawable/baseline_code_black_24" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

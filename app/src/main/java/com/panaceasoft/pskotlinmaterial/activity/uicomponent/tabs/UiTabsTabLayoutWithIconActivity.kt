@@ -1,0 +1,160 @@
+package com.panaceasoft.pskotlinmaterial.activity.uicomponent.tabs
+
+import android.graphics.PorterDuff
+import android.os.Bundle
+import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
+import androidx.viewpager.widget.ViewPager
+import com.google.android.material.tabs.TabLayout
+import com.panaceasoft.pskotlinmaterial.R
+import com.panaceasoft.pskotlinmaterial.fragment.uicomponent.container.tablayoutwithicon.*
+import kotlinx.android.synthetic.main.ui_tabs_tab_layout_with_icon_activity.*
+import java.util.*
+
+class UiTabsTabLayoutWithIconActivity : AppCompatActivity() {
+
+    private val tabIcons = intArrayOf(R.drawable.baseline_address, R.drawable.baseline_people_black_24, R.drawable.baseline_audiotrack_white_24, R.drawable.baseline_star_grey_24, R.drawable.baseline_search_view_grey_24)
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.ui_tabs_tab_layout_with_icon_activity)
+
+        initToolbar()
+
+        //      setupTabIcons();
+        setupViewPager(viewPager)
+
+        tabLayout.setupWithViewPager(viewPager)
+
+        tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            override fun onTabSelected(tab: TabLayout.Tab) {
+                val tabIconColor = ContextCompat.getColor(this@UiTabsTabLayoutWithIconActivity, R.color.md_deep_purple_900)
+                if (tab.icon != null) {
+                    tab.icon?.setColorFilter(tabIconColor, PorterDuff.Mode.SRC_IN)
+                }
+            }
+
+            override fun onTabUnselected(tab: TabLayout.Tab) {
+                val tabIconColor = ContextCompat.getColor(this@UiTabsTabLayoutWithIconActivity, R.color.md_grey_400)
+                if (tab.icon != null) {
+                    tab.icon?.setColorFilter(tabIconColor, PorterDuff.Mode.SRC_IN)
+                }
+            }
+
+            override fun onTabReselected(tab: TabLayout.Tab) {
+
+            }
+        })
+        setupTabIcons()
+
+    }
+
+    private fun setupTabIcons() {
+
+        if (tabLayout.getTabAt(0) != null) {
+            val position = tabLayout.getTabAt(0)?.setIcon(tabIcons[0])
+            val tabIconColor = ContextCompat.getColor(this@UiTabsTabLayoutWithIconActivity, R.color.md_deep_purple_900)
+            if (position?.icon != null) {
+                position.icon?.setColorFilter(tabIconColor, PorterDuff.Mode.SRC_IN)
+            }
+
+        }
+        if (tabLayout.getTabAt(1) != null) {
+            tabLayout.getTabAt(1)?.setIcon(tabIcons[1])
+        }
+        if (tabLayout.getTabAt(2) != null) {
+            tabLayout.getTabAt(2)?.setIcon(tabIcons[2])
+        }
+        if (tabLayout.getTabAt(3) != null) {
+            tabLayout.getTabAt(3)?.setIcon(tabIcons[3])
+        }
+        if (tabLayout.getTabAt(4) != null) {
+            tabLayout.getTabAt(4)?.setIcon(tabIcons[4])
+        }
+
+    }
+
+    private fun setupViewPager(viewPager: ViewPager) {
+        val adapter = ViewPagerAdapter(supportFragmentManager)
+        adapter.addFrag(UiContainerTabLayoutWithIconMapFragment(), "")
+        adapter.addFrag(UiContainerTabLayoutWithIconContactFragment(), "")
+        adapter.addFrag(UiContainerTabLayoutWithIconMusicFragment(), "")
+        adapter.addFrag(UiContainerTabLayoutWithIconFavouriteFragment(), "")
+        adapter.addFrag(UiContainerTabLayoutWithIconSearchFragment(), "")
+        viewPager.adapter = adapter
+    }
+
+    internal inner class ViewPagerAdapter(manager: FragmentManager) : FragmentPagerAdapter(manager) {
+        private val mFragmentList = ArrayList<Fragment>()
+        private val mFragmentTitleList = ArrayList<String>()
+
+        override fun getItem(position: Int): Fragment {
+            return mFragmentList[position]
+        }
+
+        override fun getCount(): Int {
+            return mFragmentList.size
+        }
+
+        fun addFrag(fragment: Fragment, title: String) {
+            mFragmentList.add(fragment)
+            mFragmentTitleList.add(title)
+        }
+
+        override fun getPageTitle(position: Int): CharSequence? {
+            return mFragmentTitleList[position]
+        }
+
+    }
+    //region Init Toolbar
+
+    private fun initToolbar() {
+
+        toolbar.setNavigationIcon(R.drawable.baseline_menu_black_24)
+
+        if (toolbar.navigationIcon != null) {
+            toolbar.navigationIcon?.setColorFilter(ContextCompat.getColor(this, R.color.md_black_1000), PorterDuff.Mode.SRC_ATOP)
+        }
+
+        toolbar.title = "Tab Layout with Icon"
+
+        try {
+            toolbar.setTitleTextColor(ContextCompat.getColor(this,R.color.md_black_1000))
+        } catch (e: Exception) {
+            Log.e("TEAMPS", "Can't set color.")
+        }
+
+        try {
+            setSupportActionBar(toolbar)
+        } catch (e: Exception) {
+            Log.e("TEAMPS", "Error in set support action bar.")
+        }
+
+        try {
+            if (supportActionBar != null) {
+                supportActionBar?.setDisplayHomeAsUpEnabled(true)
+            }
+        } catch (e: Exception) {
+            Log.e("TEAMPS", "Error in set display home as up enabled.")
+        }
+
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_more_black, menu)
+        return true
+    }
+}

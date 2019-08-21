@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/popularCardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/space_8"
+    android:layout_marginTop="@dimen/space_8"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/popularImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:foreground="@color/color_image_foreground"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/baseline_image_black_24" />
+
+        <TextView
+            android:id="@+id/popularTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Jakarta"
+            android:textAlignment="viewStart"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/font_title_size"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/popularImageView"
+            app:layout_constraintTop_toTopOf="@+id/popularImageView" />
+
+        <TextView
+            android:id="@+id/popularCityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:maxWidth="100dp"
+            android:text="Metropolis Charm"
+            android:textAlignment="viewStart"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/font_body_s_size"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/popularTitleTextView"
+            app:layout_constraintTop_toBottomOf="@+id/popularTitleTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
